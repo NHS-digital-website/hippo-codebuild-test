@@ -1,0 +1,15 @@
+---
+definitions:
+  config:
+    /hippo:configuration/hippo:update/hippo:registry/EximImport:
+      hipposys:batchsize: 10
+      hipposys:description: Exim import script modified by Valtech
+      hipposys:dryrun: false
+      hipposys:parameters: "{\r\n  \"fileInJson\": true,\r\n  \"sourceBaseFolderPath\"\
+        : \"file:${java.io.tmpdir}/exim-import/\"\r\n}"
+      hipposys:path: /
+      hipposys:script:
+        resource: /configuration/update/EximImport.groovy
+        type: string
+      hipposys:throttle: 1000
+      jcr:primaryType: hipposys:updaterinfo

@@ -1,0 +1,150 @@
+---
+/content/documents/corporate-website/publication-system/lorem-ipsum-content/nunc-tempus-ante-nec:
+  /nunc-tempus-ante-nec[1]:
+    common:FacetType: publication
+    common:FullTaxonomy:
+    - falls
+    - conditions
+    - circulatory-system-diseases
+    - accidents-and-injuries
+    common:SearchableTags:
+    - Falls
+    - Circulatory system diseases
+    common:orderedSearchDate: 1496275200000
+    common:searchRank: 4
+    common:searchable: true
+    hippo:availability: []
+    hippostd:state: draft
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModificationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippotaxonomy:keys:
+    - falls
+    - circulatory-system-diseases
+    hippotranslation:id: 00000000-0000-0000-0000-000000000000
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    jcr:primaryType: publicationsystem:publication
+    publicationsystem:AdministrativeSources: ''
+    publicationsystem:CoverageEnd: 2017-04-01T00:00:00Z
+    publicationsystem:CoverageStart: 2017-01-01T00:00:00Z
+    publicationsystem:InformationType:
+    - Official statistics
+    publicationsystem:KeyFacts: Quisque fermentum eros turpis, non laoreet lacus tempus
+      quis. Donec eget orci at massa egestas cursus. Duis at diam et eros fringilla
+      porta.
+    publicationsystem:NominalDate: 2017-06-01T00:00:00Z
+    publicationsystem:PubliclyAccessible: true
+    publicationsystem:Summary: Aenean dictum et diam sit amet egestas. Nullam ultrices,
+      lacus vel pretium bibendum, erat metus gravida quam, id elementum urna sapien
+      vel orci. Mauris ut lorem lorem. Vestibulum bibendum lorem nec nibh volutpat
+      pharetra. Nullam vitae dignissim ipsum, non varius justo. Cras hendrerit lacus
+      id urna accumsan, sit amet consequat odio viverra. Phasellus et metus finibus,
+      congue mauris egestas, hendrerit est. Donec elit mi, malesuada a interdum et,
+      pulvinar eget justo. Nam gravida justo non dui sodales suscipit. Integer in
+      turpis eros.
+    publicationsystem:Title: Nunc tempus ante nec
+  /nunc-tempus-ante-nec[2]:
+    common:FacetType: publication
+    common:FullTaxonomy:
+    - falls
+    - conditions
+    - circulatory-system-diseases
+    - accidents-and-injuries
+    common:SearchableTags:
+    - Falls
+    - Circulatory system diseases
+    common:orderedSearchDate: 1496275200000
+    common:searchRank: 4
+    common:searchable: true
+    hippo:availability:
+    - preview
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModificationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippotaxonomy:keys:
+    - falls
+    - circulatory-system-diseases
+    hippotranslation:id: 00000000-0000-0000-0000-000000000000
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    - mix:versionable
+    jcr:primaryType: publicationsystem:publication
+    publicationsystem:AdministrativeSources: ''
+    publicationsystem:CoverageEnd: 2017-04-01T00:00:00Z
+    publicationsystem:CoverageStart: 2017-01-01T00:00:00Z
+    publicationsystem:InformationType:
+    - Official statistics
+    publicationsystem:KeyFacts: Quisque fermentum eros turpis, non laoreet lacus tempus
+      quis. Donec eget orci at massa egestas cursus. Duis at diam et eros fringilla
+      porta.
+    publicationsystem:NominalDate: 2017-06-01T00:00:00Z
+    publicationsystem:PubliclyAccessible: true
+    publicationsystem:Summary: Aenean dictum et diam sit amet egestas. Nullam ultrices,
+      lacus vel pretium bibendum, erat metus gravida quam, id elementum urna sapien
+      vel orci. Mauris ut lorem lorem. Vestibulum bibendum lorem nec nibh volutpat
+      pharetra. Nullam vitae dignissim ipsum, non varius justo. Cras hendrerit lacus
+      id urna accumsan, sit amet consequat odio viverra. Phasellus et metus finibus,
+      congue mauris egestas, hendrerit est. Donec elit mi, malesuada a interdum et,
+      pulvinar eget justo. Nam gravida justo non dui sodales suscipit. Integer in
+      turpis eros.
+    publicationsystem:Title: Nunc tempus ante nec
+  /nunc-tempus-ante-nec[3]:
+    common:FacetType: publication
+    common:FullTaxonomy:
+    - falls
+    - conditions
+    - circulatory-system-diseases
+    - accidents-and-injuries
+    common:SearchableTags:
+    - Falls
+    - Circulatory system diseases
+    common:orderedSearchDate: 1496275200000
+    common:searchRank: 4
+    common:searchable: true
+    hippo:availability:
+    - live
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModificationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2017-10-16T14:00:00Z
+    hippotaxonomy:keys:
+    - falls
+    - circulatory-system-diseases
+    hippotranslation:id: 00000000-0000-0000-0000-000000000000
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    jcr:primaryType: publicationsystem:publication
+    publicationsystem:AdministrativeSources: ''
+    publicationsystem:CoverageEnd: 2017-04-01T00:00:00Z
+    publicationsystem:CoverageStart: 2017-01-01T00:00:00Z
+    publicationsystem:InformationType:
+    - Official statistics
+    publicationsystem:KeyFacts: Quisque fermentum eros turpis, non laoreet lacus tempus
+      quis. Donec eget orci at massa egestas cursus. Duis at diam et eros fringilla
+      porta.
+    publicationsystem:NominalDate: 2017-06-01T00:00:00Z
+    publicationsystem:PubliclyAccessible: true
+    publicationsystem:Summary: Aenean dictum et diam sit amet egestas. Nullam ultrices,
+      lacus vel pretium bibendum, erat metus gravida quam, id elementum urna sapien
+      vel orci. Mauris ut lorem lorem. Vestibulum bibendum lorem nec nibh volutpat
+      pharetra. Nullam vitae dignissim ipsum, non varius justo. Cras hendrerit lacus
+      id urna accumsan, sit amet consequat odio viverra. Phasellus et metus finibus,
+      congue mauris egestas, hendrerit est. Donec elit mi, malesuada a interdum et,
+      pulvinar eget justo. Nam gravida justo non dui sodales suscipit. Integer in
+      turpis eros.
+    publicationsystem:Title: Nunc tempus ante nec
+  jcr:mixinTypes:
+  - mix:referenceable
+  jcr:primaryType: hippo:handle

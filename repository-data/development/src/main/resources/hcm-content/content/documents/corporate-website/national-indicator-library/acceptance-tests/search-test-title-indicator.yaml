@@ -1,0 +1,200 @@
+---
+/content/documents/corporate-website/national-indicator-library/acceptance-tests/search-test-title-indicator:
+  /search-test-title-indicator[1]:
+    /nationalindicatorlibrary:details:
+      /nationalindicatorlibrary:caveats:
+        hippostd:content: ''
+        jcr:primaryType: hippostd:html
+      /nationalindicatorlibrary:definition:
+        hippostd:content: <p>test</p>
+        jcr:primaryType: hippostd:html
+      /nationalindicatorlibrary:interpretationGuidelines:
+        hippostd:content: ''
+        jcr:primaryType: hippostd:html
+      /nationalindicatorlibrary:methodology:
+        /nationalindicatorlibrary:calculation:
+          hippostd:content: ''
+          jcr:primaryType: hippostd:html
+        /nationalindicatorlibrary:dataSource:
+          hippostd:content: ''
+          jcr:primaryType: hippostd:html
+        /nationalindicatorlibrary:denominator:
+          hippostd:content: ''
+          jcr:primaryType: hippostd:html
+        /nationalindicatorlibrary:numerator:
+          hippostd:content: ''
+          jcr:primaryType: hippostd:html
+        jcr:primaryType: nationalindicatorlibrary:methodology
+      /nationalindicatorlibrary:purpose:
+        hippostd:content: <p>test</p>
+        jcr:primaryType: hippostd:html
+      jcr:mixinTypes:
+      - hippotaxonomy:classifiable
+      jcr:primaryType: nationalindicatorlibrary:details
+      nationalindicatorlibrary:briefDescription: test
+      nationalindicatorlibrary:iapCode: ''
+      nationalindicatorlibrary:indicatorSet: ''
+      nationalindicatorlibrary:rating: ''
+    /nationalindicatorlibrary:topbar:
+      /nationalindicatorlibrary:contactAuthor:
+        jcr:primaryType: nationalindicatorlibrary:contactAuthor
+        nationalindicatorlibrary:contactAuthorEmail: ''
+        nationalindicatorlibrary:contactAuthorName: test
+      jcr:primaryType: nationalindicatorlibrary:topbar
+      nationalindicatorlibrary:basedOn: test
+      nationalindicatorlibrary:reportingPeriod: test
+      nationalindicatorlibrary:reviewDate: 2018-03-09T16:04:00Z
+    common:FacetType: indicator
+    common:searchable: true
+    hippo:availability: []
+    hippostd:state: draft
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2018-03-09T16:03:28.182Z
+    hippostdpubwf:lastModificationDate: 2018-03-09T16:03:28.182Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippotranslation:id: 7ba16511-bdef-42fd-ad49-8db02dd3a5ec
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    jcr:primaryType: nationalindicatorlibrary:indicator
+    nationalindicatorlibrary:assuranceDate: 2018-02-01T00:00:00Z
+    nationalindicatorlibrary:assuredStatus: true
+    nationalindicatorlibrary:publishedBy: test
+    nationalindicatorlibrary:reportingLevel: test
+    nationalindicatorlibrary:title: Search Test Indicator Title WeightSearchTerm
+  /search-test-title-indicator[2]:
+    /nationalindicatorlibrary:details:
+      /nationalindicatorlibrary:caveats:
+        hippostd:content: ''
+        jcr:primaryType: hippostd:html
+      /nationalindicatorlibrary:definition:
+        hippostd:content: <p>test</p>
+        jcr:primaryType: hippostd:html
+      /nationalindicatorlibrary:interpretationGuidelines:
+        hippostd:content: ''
+        jcr:primaryType: hippostd:html
+      /nationalindicatorlibrary:methodology:
+        /nationalindicatorlibrary:calculation:
+          hippostd:content: ''
+          jcr:primaryType: hippostd:html
+        /nationalindicatorlibrary:dataSource:
+          hippostd:content: ''
+          jcr:primaryType: hippostd:html
+        /nationalindicatorlibrary:denominator:
+          hippostd:content: ''
+          jcr:primaryType: hippostd:html
+        /nationalindicatorlibrary:numerator:
+          hippostd:content: ''
+          jcr:primaryType: hippostd:html
+        jcr:primaryType: nationalindicatorlibrary:methodology
+      /nationalindicatorlibrary:purpose:
+        hippostd:content: <p>test</p>
+        jcr:primaryType: hippostd:html
+      jcr:mixinTypes:
+      - hippotaxonomy:classifiable
+      jcr:primaryType: nationalindicatorlibrary:details
+      nationalindicatorlibrary:briefDescription: test
+      nationalindicatorlibrary:iapCode: ''
+      nationalindicatorlibrary:indicatorSet: ''
+      nationalindicatorlibrary:rating: ''
+    /nationalindicatorlibrary:topbar:
+      /nationalindicatorlibrary:contactAuthor:
+        jcr:primaryType: nationalindicatorlibrary:contactAuthor
+        nationalindicatorlibrary:contactAuthorEmail: ''
+        nationalindicatorlibrary:contactAuthorName: test
+      jcr:primaryType: nationalindicatorlibrary:topbar
+      nationalindicatorlibrary:basedOn: test
+      nationalindicatorlibrary:reportingPeriod: test
+      nationalindicatorlibrary:reviewDate: 2018-03-09T16:04:00Z
+    common:FacetType: indicator
+    common:searchable: true
+    hippo:availability:
+    - preview
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2018-03-09T16:03:28.182Z
+    hippostdpubwf:lastModificationDate: 2018-03-09T16:04:27.806Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippotranslation:id: 7ba16511-bdef-42fd-ad49-8db02dd3a5ec
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    - mix:versionable
+    jcr:primaryType: nationalindicatorlibrary:indicator
+    nationalindicatorlibrary:assuranceDate: 2018-02-01T00:00:00Z
+    nationalindicatorlibrary:assuredStatus: true
+    nationalindicatorlibrary:publishedBy: test
+    nationalindicatorlibrary:reportingLevel: test
+    nationalindicatorlibrary:title: Search Test Indicator Title WeightSearchTerm
+  /search-test-title-indicator[3]:
+    /nationalindicatorlibrary:details:
+      /nationalindicatorlibrary:caveats:
+        hippostd:content: ''
+        jcr:primaryType: hippostd:html
+      /nationalindicatorlibrary:definition:
+        hippostd:content: <p>test</p>
+        jcr:primaryType: hippostd:html
+      /nationalindicatorlibrary:interpretationGuidelines:
+        hippostd:content: ''
+        jcr:primaryType: hippostd:html
+      /nationalindicatorlibrary:methodology:
+        /nationalindicatorlibrary:calculation:
+          hippostd:content: ''
+          jcr:primaryType: hippostd:html
+        /nationalindicatorlibrary:dataSource:
+          hippostd:content: ''
+          jcr:primaryType: hippostd:html
+        /nationalindicatorlibrary:denominator:
+          hippostd:content: ''
+          jcr:primaryType: hippostd:html
+        /nationalindicatorlibrary:numerator:
+          hippostd:content: ''
+          jcr:primaryType: hippostd:html
+        jcr:primaryType: nationalindicatorlibrary:methodology
+      /nationalindicatorlibrary:purpose:
+        hippostd:content: <p>test</p>
+        jcr:primaryType: hippostd:html
+      jcr:mixinTypes:
+      - hippotaxonomy:classifiable
+      jcr:primaryType: nationalindicatorlibrary:details
+      nationalindicatorlibrary:briefDescription: test
+      nationalindicatorlibrary:iapCode: ''
+      nationalindicatorlibrary:indicatorSet: ''
+      nationalindicatorlibrary:rating: ''
+    /nationalindicatorlibrary:topbar:
+      /nationalindicatorlibrary:contactAuthor:
+        jcr:primaryType: nationalindicatorlibrary:contactAuthor
+        nationalindicatorlibrary:contactAuthorEmail: ''
+        nationalindicatorlibrary:contactAuthorName: test
+      jcr:primaryType: nationalindicatorlibrary:topbar
+      nationalindicatorlibrary:basedOn: test
+      nationalindicatorlibrary:reportingPeriod: test
+      nationalindicatorlibrary:reviewDate: 2018-03-09T16:04:00Z
+    common:FacetType: indicator
+    common:searchable: true
+    hippo:availability:
+    - live
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2018-03-09T16:03:28.182Z
+    hippostdpubwf:lastModificationDate: 2018-03-09T16:04:27.806Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2018-03-09T16:04:35.260Z
+    hippotranslation:id: 7ba16511-bdef-42fd-ad49-8db02dd3a5ec
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    jcr:primaryType: nationalindicatorlibrary:indicator
+    nationalindicatorlibrary:assuranceDate: 2018-02-01T00:00:00Z
+    nationalindicatorlibrary:assuredStatus: true
+    nationalindicatorlibrary:publishedBy: test
+    nationalindicatorlibrary:reportingLevel: test
+    nationalindicatorlibrary:title: Search Test Indicator Title WeightSearchTerm
+  hippo:name: search test title indicator
+  jcr:mixinTypes:
+  - hippo:named
+  - mix:referenceable
+  jcr:primaryType: hippo:handle

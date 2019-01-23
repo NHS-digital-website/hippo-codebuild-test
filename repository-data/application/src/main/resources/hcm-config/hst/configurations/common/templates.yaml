@@ -1,0 +1,164 @@
+---
+definitions:
+  config:
+    /hst:hst/hst:configurations/common/hst:templates:
+      /404:
+        hst:renderpath: webfile:/freemarker/common/404.ftl
+        jcr:primaryType: hst:template
+      /about:
+        hst:renderpath: webfile:/freemarker/common/about.ftl
+        jcr:primaryType: hst:template
+      /app-layout:
+        hst:renderpath: webfile:/freemarker/common/app-layout.ftl
+        jcr:primaryType: hst:template
+      /app-layout-no-header-search:
+        hst:renderpath: webfile:/freemarker/common/app-layout-no-header-search.ftl
+        jcr:primaryType: hst:template
+      /archive:
+        hst:renderpath: webfile:/freemarker/publicationsystem/archive.ftl
+        jcr:primaryType: hst:template
+      /base-top-menu:
+        hst:renderpath: webfile:/freemarker/common/base-top-menu.ftl
+        jcr:primaryType: hst:template
+      /cilanding:
+        hst:renderpath: webfile:/freemarker/publicationsystem/cilanding.ftl
+        jcr:primaryType: hst:template
+      /cta-list:
+        hst:renderpath: webfile:/freemarker/common/cta-list.ftl
+        jcr:primaryType: hst:template
+      /dataset:
+        hst:renderpath: webfile:/freemarker/publicationsystem/dataset.ftl
+        jcr:primaryType: hst:template
+      /document-list:
+        hst:renderpath: webfile:/freemarker/common/document-list.ftl
+        jcr:primaryType: hst:template
+      /eforms-default:
+        hst:renderpath: webfile:/freemarker/common/eforms/eforms-default.ftl
+        jcr:primaryType: hst:template
+      /eforms-validation-default:
+        hst:renderpath: webfile:/freemarker/common/eforms/eforms-validation-default.ftl
+        jcr:primaryType: hst:template
+      /event-article:
+        hst:renderpath: webfile:/freemarker/common/event-article.ftl
+        jcr:primaryType: hst:template
+      /event-hub-article:
+        hst:renderpath: webfile:/freemarker/common/event-hub-article.ftl
+        jcr:primaryType: hst:template
+      /eventlist-main-eventlist:
+        hst:renderpath: webfile:/freemarker/common/eventlist-main-eventlist.ftl
+        jcr:primaryType: hst:template
+      /facets:
+        hst:renderpath: webfile:/freemarker/common/facets.ftl
+        jcr:primaryType: hst:template
+      /folder:
+        hst:renderpath: webfile:/freemarker/publicationsystem/folder.ftl
+        jcr:primaryType: hst:template
+      /footer:
+        hst:renderpath: webfile:/freemarker/common/base-footer.ftl
+        jcr:primaryType: hst:template
+      /gdpr-article:
+        hst:renderpath: webfile:/freemarker/common/gdpr-article.ftl
+        jcr:primaryType: hst:template
+      /gdpr-summary-article:
+        hst:renderpath: webfile:/freemarker/common/gdpr-summary-article.ftl
+        jcr:primaryType: hst:template
+      /general-article:
+        hst:renderpath: webfile:/freemarker/common/general-article.ftl
+        jcr:primaryType: hst:template
+      /homeland:
+        hst:renderpath: webfile:/freemarker/common/homeland.ftl
+        jcr:primaryType: hst:template
+      /hub-article:
+        hst:renderpath: webfile:/freemarker/common/hub-article.ftl
+        jcr:primaryType: hst:template
+      /indicator:
+        hst:renderpath: webfile:/freemarker/nationalindicatorlibrary/indicator.ftl
+        jcr:primaryType: hst:template
+      /legacypublication:
+        hst:renderpath: webfile:/freemarker/publicationsystem/legacy-publication.ftl
+        jcr:primaryType: hst:template
+      /list-article:
+        hst:renderpath: webfile:/freemarker/common/list-article.ftl
+        jcr:primaryType: hst:template
+      /menu:
+        hst:renderpath: webfile:/freemarker/common/menu.ftl
+        jcr:primaryType: hst:template
+      /news-article:
+        hst:renderpath: webfile:/freemarker/common/news-article.ftl
+        jcr:primaryType: hst:template
+      /news-hub-article:
+        hst:renderpath: webfile:/freemarker/common/news-hub-article.ftl
+        jcr:primaryType: hst:template
+      /newslist-main-newslist:
+        hst:renderpath: webfile:/freemarker/common/newslist-main-newslist.ftl
+        jcr:primaryType: hst:template
+      /nihub:
+        hst:renderpath: webfile:/freemarker/nationalindicatorlibrary/nihub.ftl
+        jcr:primaryType: hst:template
+      /nilanding:
+        hst:renderpath: webfile:/freemarker/nationalindicatorlibrary/nilanding.ftl
+        jcr:primaryType: hst:template
+      /past-event-hub-article:
+        hst:renderpath: webfile:/freemarker/common/past-event-hub-article.ftl
+        jcr:primaryType: hst:template
+      /publication:
+        hst:renderpath: webfile:/freemarker/publicationsystem/publication.ftl
+        jcr:primaryType: hst:template
+      /publicationPage:
+        hst:renderpath: webfile:/freemarker/publicationsystem/publicationPage.ftl
+        jcr:primaryType: hst:template
+      /publications-list:
+        hst:renderpath: webfile:/freemarker/common/publications-list.ftl
+        jcr:primaryType: hst:template
+      /published-work-article:
+        hst:renderpath: webfile:/freemarker/common/published-work-article.ftl
+        jcr:primaryType: hst:template
+      /published-work-chapter-article:
+        hst:renderpath: webfile:/freemarker/common/published-work-chapter-article.ftl
+        jcr:primaryType: hst:template
+      /pubs_app-layout:
+        hst:renderpath: webfile:/freemarker/common/pubs_app-layout.ftl
+        jcr:primaryType: hst:template
+      /pubs_app-layout-search-results:
+        hst:renderpath: webfile:/freemarker/common/pubs_app-layout-search-results.ftl
+        jcr:primaryType: hst:template
+      /pubs_searchbar:
+        hst:renderpath: webfile:/freemarker/common/pubs_searchbar.ftl
+        jcr:primaryType: hst:template
+      /roadmap:
+        hst:renderpath: webfile:/freemarker/common/roadmap.ftl
+        jcr:primaryType: hst:template
+      /roadmapitem:
+        hst:renderpath: webfile:/freemarker/common/roadmapitem.ftl
+        jcr:primaryType: hst:template
+      /searchbanner:
+        hst:renderpath: webfile:/freemarker/common/search-banner.ftl
+        jcr:primaryType: hst:template
+      /searchbar:
+        hst:renderpath: webfile:/freemarker/common/searchbar.ftl
+        jcr:primaryType: hst:template
+      /searchresults:
+        hst:renderpath: webfile:/freemarker/common/searchresults.ftl
+        jcr:primaryType: hst:template
+      /searchtabs:
+        hst:renderpath: webfile:/freemarker/common/searchtabs.ftl
+        jcr:primaryType: hst:template
+      /series:
+        hst:renderpath: webfile:/freemarker/publicationsystem/series.ftl
+        jcr:primaryType: hst:template
+      /service-article:
+        hst:renderpath: webfile:/freemarker/common/service-article.ftl
+        jcr:primaryType: hst:template
+      /static-ui-eform:
+        hst:renderpath: webfile:/freemarker/common/static-ui/eform-page.ftl
+        jcr:primaryType: hst:template
+      /static-ui-general:
+        hst:renderpath: webfile:/freemarker/common/static-ui/general-page.ftl
+        jcr:primaryType: hst:template
+      /static-ui-latest-events:
+        hst:renderpath: webfile:/freemarker/common/static-ui/latest-events-page.ftl
+        jcr:primaryType: hst:template
+      /static-ui-news-hub:
+        hst:renderpath: webfile:/freemarker/common/static-ui/news-hub-page.ftl
+        jcr:primaryType: hst:template
+      jcr:primaryType: hst:templates

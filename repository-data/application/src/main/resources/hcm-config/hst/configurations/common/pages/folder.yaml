@@ -1,0 +1,10 @@
+---
+definitions:
+  config:
+    /hst:hst/hst:configurations/common/hst:pages/folder:
+      /main:
+        hst:componentclassname: uk.nhs.digital.ps.components.FolderComponent
+        hst:template: folder
+        jcr:primaryType: hst:component
+      hst:referencecomponent: hst:abstractpages/basepage
+      jcr:primaryType: hst:component

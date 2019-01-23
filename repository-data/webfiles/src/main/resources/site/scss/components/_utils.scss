@@ -1,0 +1,57 @@
+/* Utils */
+
+.no-border {
+    border: none;
+}
+
+.no-top-padding {
+    padding-top: 0;
+}
+
+.no-bottom-padding {
+    padding-bottom: 0;
+}
+
+.no-top-margin {
+    margin-top: 0;
+}
+
+.no-bottom-margin {
+    margin-top: 0;
+}
+
+.wide {
+    width: 100%;
+}
+
+.strong {
+    font-weight: 600;
+}
+
+.regular {
+    font-weight: 300;
+}
+
+.sticky {
+    @include media($min-width: $min-desktop-width) {
+        position: -webkit-sticky;
+        position: sticky;
+        z-index: 1;
+
+        &.sticky--top {
+            top: -1px;
+            margin-top: 1px;
+        }
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+}

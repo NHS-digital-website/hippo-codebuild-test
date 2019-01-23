@@ -1,0 +1,28 @@
+---
+definitions:
+  config:
+    /hippo:configuration/hippo:translations/hippo:cms/validators/en:
+      publicationsystem-attachment#blank-attachment: There is an attachment field
+        without an attachment. Please remove it or upload a file.
+      publicationsystem-attachment#duplicate-name: There is an attachment field with
+        a duplicate display name. Please rename one of the fields.
+      publicationsystem-blank-staticdropdown: '{0} has a ''''Choose One'''' placeholder
+        without a value. Please remove the placeholder or select a value.'
+      publicationsystem-charts-datafile: Chart input data file is invalid. Please
+        remove chart component or upload a correctly formatted file.
+      publicationsystem-coverage-dates#dates-after-nominal: Coverage dates must not
+        be after publication date.
+      publicationsystem-coverage-dates#end-before-start: Coverage End date must not
+        be before Coverage Start date.
+      publicationsystem-coverage-dates#no-end-provided: Coverage End date required.
+        If no end date exists and a snapshot date is required, set the Coverage End
+        to the same as Coverage Start.
+      publicationsystem-coverage-dates#no-start-provided: Coverage End date requires
+        a corresponding Coverage Start date.
+      publicationsystem-duplicate-staticdropdown: '{0} has a duplicate value. Please
+        remove one of the duplicates or select a different value.'
+      publicationsystem-publication-date: Publication Date cannot be in the past or
+        more than {0} years in the future.
+      publicationsystem-title: Title must be 250 characters or less
+      valid-url: Link URL must start with http:// or https://
+      website-blank-multi-string: Field cannot be blank

@@ -1,0 +1,77 @@
+---
+/content/documents/administration/national-indicator-library/labels:
+  /labels[1]:
+    hippo:availability: []
+    hippostd:state: draft
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2018-03-08T10:58:44.737Z
+    hippostdpubwf:lastModificationDate: 2018-03-08T14:39:28.892Z
+    hippostdpubwf:lastModifiedBy: admin
+    jcr:mixinTypes:
+    - mix:referenceable
+    jcr:primaryType: resourcebundle:resourcebundle
+    resourcebundle:descriptions:
+    - ''
+    - ''
+    resourcebundle:id: nationalindicatorlibrary.labels
+    resourcebundle:keys:
+    - labels.indicator
+    - labels.assured
+    - labels.unassured
+    resourcebundle:messages:
+    - Methodology
+    - Independently assured by Information Governance Board (IGB)
+    - Unassured
+  /labels[2]:
+    hippo:availability:
+    - preview
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2018-03-08T10:58:44.737Z
+    hippostdpubwf:lastModificationDate: 2018-03-08T14:39:53.694Z
+    hippostdpubwf:lastModifiedBy: admin
+    jcr:mixinTypes:
+    - mix:referenceable
+    - mix:versionable
+    jcr:primaryType: resourcebundle:resourcebundle
+    resourcebundle:descriptions:
+    - ''
+    - ''
+    resourcebundle:id: nationalindicatorlibrary.labels
+    resourcebundle:keys:
+    - labels.indicator
+    - labels.assured
+    - labels.unassured
+    resourcebundle:messages:
+    - Methodology
+    - Independently assured by Information Governance Board (IGB)
+    - Unassured
+  /labels[3]:
+    hippo:availability:
+    - live
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2018-03-08T10:58:44.737Z
+    hippostdpubwf:lastModificationDate: 2018-03-08T14:39:53.694Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2018-03-08T14:39:57.128Z
+    jcr:mixinTypes:
+    - mix:referenceable
+    jcr:primaryType: resourcebundle:resourcebundle
+    resourcebundle:descriptions:
+    - ''
+    - ''
+    resourcebundle:id: nationalindicatorlibrary.labels
+    resourcebundle:keys:
+    - labels.indicator
+    - labels.assured
+    - labels.unassured
+    resourcebundle:messages:
+    - Methodology
+    - Independently assured by Information Governance Board (IGB)
+    - Unassured
+  hippo:name: Labels
+  jcr:mixinTypes:
+  - hippo:named
+  - mix:referenceable
+  jcr:primaryType: hippo:handle

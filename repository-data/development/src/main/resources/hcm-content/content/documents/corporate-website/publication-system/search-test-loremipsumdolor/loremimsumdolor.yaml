@@ -1,0 +1,132 @@
+---
+/content/documents/corporate-website/publication-system/search-test-loremipsumdolor/loremipsumdolor:
+  /loremipsumdolor[1]:
+    common:FacetType: publication
+    common:FullTaxonomy:
+    - falls
+    - infectious-diseases
+    - workforce
+    - conditions
+    - accidents-and-injuries
+    common:SearchableTags:
+    - Falls
+    - Infectious diseases
+    - Workforce
+    common:orderedSearchDate: 1496275200000
+    common:searchRank: 4
+    common:searchable: true
+    hippo:availability: []
+    hippostd:state: draft
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModificationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippotaxonomy:keys:
+    - falls
+    - infectious-diseases
+    - workforce
+    hippotranslation:id: 00000000-0000-0000-0000-000000000000
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    jcr:primaryType: publicationsystem:publication
+    publicationsystem:AdministrativeSources: ''
+    publicationsystem:CoverageEnd: 2017-04-01T00:00:00Z
+    publicationsystem:CoverageStart: 2017-01-01T00:00:00Z
+    publicationsystem:InformationType:
+    - Official statistics
+    publicationsystem:KeyFacts: ''
+    publicationsystem:NominalDate: 2017-06-01T00:00:00Z
+    publicationsystem:PubliclyAccessible: true
+    publicationsystem:Summary: ''
+    publicationsystem:Title: loremipsumdolor
+  /loremipsumdolor[2]:
+    common:FacetType: publication
+    common:FullTaxonomy:
+    - falls
+    - infectious-diseases
+    - workforce
+    - conditions
+    - accidents-and-injuries
+    common:SearchableTags:
+    - Falls
+    - Infectious diseases
+    - Workforce
+    common:orderedSearchDate: 1496275200000
+    common:searchRank: 4
+    common:searchable: true
+    hippo:availability:
+    - preview
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModificationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippotaxonomy:keys:
+    - falls
+    - infectious-diseases
+    - workforce
+    hippotranslation:id: 00000000-0000-0000-0000-000000000000
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    - mix:versionable
+    jcr:primaryType: publicationsystem:publication
+    publicationsystem:AdministrativeSources: ''
+    publicationsystem:CoverageEnd: 2017-04-01T00:00:00Z
+    publicationsystem:CoverageStart: 2017-01-01T00:00:00Z
+    publicationsystem:InformationType:
+    - Official statistics
+    publicationsystem:KeyFacts: ''
+    publicationsystem:NominalDate: 2017-06-01T00:00:00Z
+    publicationsystem:PubliclyAccessible: true
+    publicationsystem:Summary: ''
+    publicationsystem:Title: loremipsumdolor
+  /loremipsumdolor[3]:
+    common:FacetType: publication
+    common:FullTaxonomy:
+    - falls
+    - infectious-diseases
+    - workforce
+    - conditions
+    - accidents-and-injuries
+    common:SearchableTags:
+    - Falls
+    - Infectious diseases
+    - Workforce
+    common:orderedSearchDate: 1496275200000
+    common:searchRank: 4
+    common:searchable: true
+    hippo:availability:
+    - live
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModificationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2017-10-16T14:00:00Z
+    hippotaxonomy:keys:
+    - falls
+    - infectious-diseases
+    - workforce
+    hippotranslation:id: 00000000-0000-0000-0000-000000000000
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    jcr:primaryType: publicationsystem:publication
+    publicationsystem:AdministrativeSources: ''
+    publicationsystem:CoverageEnd: 2017-04-01T00:00:00Z
+    publicationsystem:CoverageStart: 2017-01-01T00:00:00Z
+    publicationsystem:InformationType:
+    - Official statistics
+    publicationsystem:KeyFacts: ''
+    publicationsystem:NominalDate: 2017-06-01T00:00:00Z
+    publicationsystem:PubliclyAccessible: true
+    publicationsystem:Summary: ''
+    publicationsystem:Title: loremipsumdolor
+  jcr:mixinTypes:
+  - mix:referenceable
+  jcr:primaryType: hippo:handle

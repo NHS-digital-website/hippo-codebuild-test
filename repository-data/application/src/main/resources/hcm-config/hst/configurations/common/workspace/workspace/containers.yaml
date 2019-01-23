@@ -1,0 +1,33 @@
+---
+definitions:
+  config:
+    /hst:hst/hst:configurations/common/hst:workspace/hst:containers:
+      /homepage:
+        /homepage-bottom:
+          jcr:primaryType: hst:containercomponentfolder
+        /homepage-center:
+          .meta:residual-child-node-category: content
+          hst:label: Data and Information
+          hst:lastmodified: 2018-02-21T10:59:17.217Z
+          hst:xtype: HST.vBox
+          jcr:primaryType: hst:containercomponent
+        /homepage-center-2:
+          .meta:residual-child-node-category: content
+          hst:label: Systems and Services
+          hst:lastmodified: 2018-02-27T18:40:30.862Z
+          hst:xtype: HST.vBox
+          jcr:primaryType: hst:containercomponent
+        /homepage-information:
+          .meta:residual-child-node-category: content
+          hst:label: How we use your information
+          hst:lastmodified: 2018-02-21T11:03:27.706Z
+          hst:xtype: HST.vBox
+          jcr:primaryType: hst:containercomponent
+        /homepage-top:
+          .meta:residual-child-node-category: content
+          hst:label: Top
+          hst:lastmodified: 2018-02-05T20:39:14.327Z
+          hst:xtype: HST.vBox
+          jcr:primaryType: hst:containercomponent
+        jcr:primaryType: hst:containercomponentfolder
+      jcr:primaryType: hst:containercomponentfolder

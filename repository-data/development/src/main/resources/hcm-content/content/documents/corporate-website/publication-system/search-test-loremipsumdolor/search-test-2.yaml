@@ -1,0 +1,127 @@
+---
+/content/documents/corporate-website/publication-system/search-test-loremipsumdolor/search-test-2:
+  /search-test-2[1]:
+    common:FacetType: publication
+    common:FullTaxonomy:
+    - conditions
+    - dental-health
+    - circulatory-system-diseases
+    common:SearchableTags:
+    - Circulatory system diseases
+    - Dental health
+    common:orderedSearchDate: 1604707200000
+    common:searchRank: 4
+    common:searchable: true
+    hippo:availability:
+    - preview
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2017-11-07T11:04:05.894Z
+    hippostdpubwf:lastModificationDate: 2017-11-07T11:06:56.610Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippotaxonomy:keys:
+    - circulatory-system-diseases
+    - dental-health
+    hippotranslation:id: ab8570f7-9041-4fdf-a127-8b57d5bb7448
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:versionable
+    jcr:primaryType: publicationsystem:publication
+    publicationsystem:AdministrativeSources: ''
+    publicationsystem:CoverageEnd: 0001-01-01T12:00:00Z
+    publicationsystem:CoverageStart: 0001-01-01T12:00:00Z
+    publicationsystem:GeographicCoverage:
+    - England
+    publicationsystem:InformationType:
+    - Experimental statistics
+    publicationsystem:KeyFacts: And I like oranges
+    publicationsystem:NominalDate: 2020-11-07T00:00:00Z
+    publicationsystem:PubliclyAccessible: true
+    publicationsystem:Summary: I like apples
+    publicationsystem:Title: Apple orange
+  /search-test-2[2]:
+    common:FacetType: publication
+    common:FullTaxonomy:
+    - conditions
+    - dental-health
+    - circulatory-system-diseases
+    common:SearchableTags:
+    - Circulatory system diseases
+    - Dental health
+    common:orderedSearchDate: 1604707200000
+    common:searchRank: 4
+    common:searchable: true
+    hippo:availability: []
+    hippostd:state: draft
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2017-11-07T11:04:05.894Z
+    hippostdpubwf:lastModificationDate: 2017-11-07T11:06:39.482Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippotaxonomy:keys:
+    - circulatory-system-diseases
+    - dental-health
+    hippotranslation:id: ab8570f7-9041-4fdf-a127-8b57d5bb7448
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    jcr:primaryType: publicationsystem:publication
+    publicationsystem:AdministrativeSources: ''
+    publicationsystem:CoverageEnd: 0001-01-01T12:00:00Z
+    publicationsystem:CoverageStart: 0001-01-01T12:00:00Z
+    publicationsystem:GeographicCoverage:
+    - England
+    publicationsystem:InformationType:
+    - Experimental statistics
+    publicationsystem:KeyFacts: And I like oranges
+    publicationsystem:NominalDate: 2020-11-07T00:00:00Z
+    publicationsystem:PubliclyAccessible: true
+    publicationsystem:Summary: I like apples
+    publicationsystem:Title: Apple orange
+  /search-test-2[3]:
+    common:FacetType: publication
+    common:FullTaxonomy:
+    - conditions
+    - dental-health
+    - circulatory-system-diseases
+    common:SearchableTags:
+    - Circulatory system diseases
+    - Dental health
+    common:orderedSearchDate: 1604707200000
+    common:searchRank: 4
+    common:searchable: true
+    hippo:availability:
+    - live
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2017-11-07T11:04:05.894Z
+    hippostdpubwf:lastModificationDate: 2017-11-07T11:06:56.610Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2017-11-07T11:07:00.081Z
+    hippotaxonomy:keys:
+    - circulatory-system-diseases
+    - dental-health
+    hippotranslation:id: ab8570f7-9041-4fdf-a127-8b57d5bb7448
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    jcr:primaryType: publicationsystem:publication
+    publicationsystem:AdministrativeSources: ''
+    publicationsystem:CoverageEnd: 0001-01-01T12:00:00Z
+    publicationsystem:CoverageStart: 0001-01-01T12:00:00Z
+    publicationsystem:GeographicCoverage:
+    - England
+    publicationsystem:InformationType:
+    - Experimental statistics
+    publicationsystem:KeyFacts: And I like oranges
+    publicationsystem:NominalDate: 2020-11-07T00:00:00Z
+    publicationsystem:PubliclyAccessible: true
+    publicationsystem:Summary: I like apples
+    publicationsystem:Title: Apple orange
+  hippo:name: search test 2
+  jcr:mixinTypes:
+  - hippo:named
+  - mix:referenceable
+  jcr:primaryType: hippo:handle

@@ -1,0 +1,211 @@
+---
+definitions:
+  config:
+    /hst:hst/hst:configurations/common/hst:sitemap:
+      /_any_:
+        /_index_:
+          hst:componentconfigurationid: hst:pages/404
+          hst:componentconfigurationmappingnames:
+          - website:service
+          - website:general
+          - website:hub
+          - website:componentlist
+          - website:news
+          - website:event
+          - website:gdprtransparency
+          - website:gdprsummary
+          - website:publishedwork
+          - website:publishedworkchapter
+          - website:generalnonsearch
+          - website:roadmap
+          - website:roadmapitem
+          hst:componentconfigurationmappingvalues:
+          - hst:pages/service
+          - hst:pages/general
+          - hst:pages/hub
+          - hst:pages/componentlist
+          - hst:pages/news
+          - hst:pages/event
+          - hst:pages/gdpr
+          - hst:pages/gdprsummary
+          - hst:pages/publishedwork
+          - hst:pages/publishedworkchapter
+          - hst:pages/general
+          - hst:pages/roadmap
+          - hst:pages/roadmapitem
+          hst:relativecontentpath: ${parent}/content
+          jcr:primaryType: hst:sitemapitem
+        hst:componentconfigurationid: hst:pages/404
+        hst:componentconfigurationmappingnames:
+        - website:service
+        - website:general
+        - website:hub
+        - website:componentlist
+        - website:news
+        - website:event
+        - website:gdprtransparency
+        - website:gdprsummary
+        - website:publishedwork
+        - website:publishedworkchapter
+        - website:generalnonsearch
+        - website:roadmap
+        - website:roadmapitem
+        hst:componentconfigurationmappingvalues:
+        - hst:pages/service
+        - hst:pages/general
+        - hst:pages/hub
+        - hst:pages/componentlist
+        - hst:pages/news
+        - hst:pages/event
+        - hst:pages/gdpr
+        - hst:pages/gdprsummary
+        - hst:pages/publishedwork
+        - hst:pages/publishedworkchapter
+        - hst:pages/general
+        - hst:pages/roadmap
+        - hst:pages/roadmapitem
+        hst:relativecontentpath: ${1}
+        jcr:primaryType: hst:sitemapitem
+      /about:
+        /_any_:
+          hst:componentconfigurationid: hst:pages/about
+          hst:relativecontentpath: about/${1}
+          jcr:primaryType: hst:sitemapitem
+        hst:componentconfigurationid: hst:pages/about
+        hst:relativecontentpath: about
+        jcr:primaryType: hst:sitemapitem
+      /data-and-information:
+        /_index_:
+          hst:componentconfigurationid: hst:pages/404
+          hst:componentconfigurationmappingnames:
+          - website:service
+          - website:general
+          - website:hub
+          - website:componentlist
+          hst:componentconfigurationmappingvalues:
+          - hst:pages/service
+          - hst:pages/general
+          - hst:pages/hub
+          - hst:pages/componentlist
+          hst:relativecontentpath: data-and-information/content
+          jcr:primaryType: hst:sitemapitem
+        /national-indicator-library:
+          /_any_:
+            hst:componentconfigurationid: hst:pages/404
+            hst:componentconfigurationmappingnames:
+            - nationalindicatorlibrary:nihub
+            - nationalindicatorlibrary:indicator
+            hst:componentconfigurationmappingvalues:
+            - hst:pages/nihub
+            - hst:pages/indicator
+            hst:relativecontentpath: national-indicator-library/${1}
+            jcr:primaryType: hst:sitemapitem
+          /_index_:
+            hst:componentconfigurationid: hst:pages/nihub
+            hst:relativecontentpath: national-indicator-library/nihub
+            jcr:primaryType: hst:sitemapitem
+          /help:
+            hst:componentconfigurationid: hst:pages/nilanding
+            hst:refId: nilHelp
+            hst:relativecontentpath: national-indicator-library/help
+            jcr:primaryType: hst:sitemapitem
+          hst:componentconfigurationid: hst:pages/404
+          jcr:primaryType: hst:sitemapitem
+        /publications:
+          /_any_:
+            /_index_:
+              hst:componentconfigurationid: hst:pages/404
+              hst:componentconfigurationmappingnames:
+              - publicationsystem:archive
+              - publicationsystem:legacypublication
+              - publicationsystem:publication
+              - publicationsystem:series
+              - website:general
+              hst:componentconfigurationmappingvalues:
+              - hst:pages/archive
+              - hst:pages/legacypublication
+              - hst:pages/publication
+              - hst:pages/series
+              - hst:pages/general
+              hst:relativecontentpath: ${parent}/content
+              jcr:primaryType: hst:sitemapitem
+            hst:componentconfigurationid: hst:pages/404
+            hst:componentconfigurationmappingnames:
+            - publicationsystem:archive
+            - publicationsystem:dataset
+            - hippostd:folder
+            - publicationsystem:legacypublication
+            - publicationsystem:publication
+            - publicationsystem:publicationPage
+            - publicationsystem:series
+            - publicationsystem:cilanding
+            - website:general
+            hst:componentconfigurationmappingvalues:
+            - hst:pages/archive
+            - hst:pages/dataset
+            - hst:pages/folder
+            - hst:pages/legacypublication
+            - hst:pages/publication
+            - hst:pages/publicationPage
+            - hst:pages/series
+            - hst:pages/cilanding
+            - hst:pages/general
+            hst:relativecontentpath: publication-system/${1}
+            jcr:primaryType: hst:sitemapitem
+          hst:componentconfigurationid: hst:pages/404
+          jcr:primaryType: hst:sitemapitem
+        hst:componentconfigurationid: hst:pages/404
+        jcr:primaryType: hst:sitemapitem
+      /error:
+        /404:
+          hst:componentconfigurationid: hst:pages/404
+          hst:refId: pagenotfound
+          jcr:primaryType: hst:sitemapitem
+        jcr:primaryType: hst:sitemapitem
+      /forms:
+        /_any_:
+          hst:componentconfigurationid: hst:pages/form-mail
+          hst:relativecontentpath: ${parent}/${1}
+          jcr:primaryType: hst:sitemapitem
+        /_index_:
+          hst:componentconfigurationid: hst:pages/404
+          hst:componentconfigurationmappingnames:
+          - website:hub
+          hst:componentconfigurationmappingvalues:
+          - hst:pages/hub
+          hst:relativecontentpath: ${parent}/forms
+          jcr:primaryType: hst:sitemapitem
+        hst:componentconfigurationid: hst:pages/hub
+        hst:relativecontentpath: forms
+        jcr:primaryType: hst:sitemapitem
+      /news-and-events:
+        /events:
+          hst:componentconfigurationid: hst:pages/latestevents
+          jcr:primaryType: hst:sitemapitem
+        /news:
+          hst:componentconfigurationid: hst:pages/latestnews
+          jcr:primaryType: hst:sitemapitem
+        /pastevents:
+          hst:componentconfigurationid: hst:pages/pastevents
+          jcr:primaryType: hst:sitemapitem
+        hst:componentconfigurationid: hst:pages/hub
+        hst:relativecontentpath: news-and-events/content
+        jcr:primaryType: hst:sitemapitem
+      /robots.txt:
+        hst:componentconfigurationid: hst:pages/robotstxt
+        hst:relativecontentpath: ../administration/robots
+        jcr:primaryType: hst:sitemapitem
+      /root:
+        hst:componentconfigurationid: hst:pages/homeland
+        hst:refId: root
+        jcr:primaryType: hst:sitemapitem
+      /search:
+        /_any_:
+          hst:componentconfigurationid: hst:pages/search
+          hst:relativecontentpath: facet/${1}
+          jcr:primaryType: hst:sitemapitem
+        hst:componentconfigurationid: hst:pages/search
+        hst:refId: search
+        hst:relativecontentpath: facet
+        jcr:primaryType: hst:sitemapitem
+      jcr:primaryType: hst:sitemap

@@ -1,0 +1,270 @@
+---
+/content/documents/corporate-website/publication-system/acceptance-tests/publication-with-datasets/content:
+  /content[1]:
+    /publicationsystem:Attachments-v3:
+      /publicationsystem:attachmentResource:
+        externalstorage:reference: BD/9EBC19/attachment.pdf
+        externalstorage:size: 42197
+        externalstorage:url: https://files.local.nhsd.io/BD/9EBC19/attachment.pdf
+        hippo:filename: attachment.pdf
+        hippo:text:
+          resource: /content/documents/corporate-website/publication-system/acceptance-tests/publication-with-datasets/content/content[1]/Attachments-v3/attachmentResource/text.pdf
+          type: binary
+        jcr:data:
+          resource: /content/documents/corporate-website/publication-system/acceptance-tests/publication-with-datasets/content/content[1]/Attachments-v3/attachmentResource/data.pdf
+          type: binary
+        jcr:encoding: UTF-8
+        jcr:lastModified: 2018-04-27T09:30:16.588Z
+        jcr:mimeType: application/pdf
+        jcr:primaryType: externalstorage:resource
+      jcr:primaryType: publicationsystem:extattachment
+      publicationsystem:displayName: ''
+    /publicationsystem:RelatedLinks:
+      jcr:primaryType: publicationsystem:relatedlink
+      publicationsystem:linkText: Test google.com link
+      publicationsystem:linkUrl: http://google.com
+    /publicationsystem:ResourceLinks:
+      jcr:primaryType: publicationsystem:relatedlink
+      publicationsystem:linkText: Related resource link
+      publicationsystem:linkUrl: http://google.com
+    common:FacetType: publication
+    common:FullTaxonomy:
+    - people,-patients-and-geography
+    common:SearchableTags:
+    - People, patients and geography
+    common:orderedSearchDate: 1602374400000
+    common:searchRank: 4
+    common:searchable: true
+    hippo:availability: []
+    hippostd:state: draft
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2017-11-03T13:35:36.812Z
+    hippostdpubwf:lastModificationDate: 2018-01-17T12:53:36.117Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippotaxonomy:keys:
+    - people,-patients-and-geography
+    hippotranslation:id: 00000000-0000-0000-0000-000000000000
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    jcr:primaryType: publicationsystem:publication
+    publicationsystem:AdministrativeSources: Admin sources
+    publicationsystem:CoverageEnd: 2018-02-01T00:00:00Z
+    publicationsystem:CoverageStart: 2017-11-01T00:00:00Z
+    publicationsystem:GeographicCoverage:
+    - England
+    publicationsystem:Granularity:
+    - NHS Trusts
+    - GP practices
+    publicationsystem:InformationType:
+    - Experimental statistics
+    publicationsystem:KeyFacts: Morbi egestas nisi at arcu pulvinar ultrices. Sed
+      et nunc risus. In hac habitasse platea dictumst. Proin ultrices, velit vitae
+      mollis aliquet, ligula ipsum tincidunt ante, nec imperdiet sapien neque a nibh.
+      In porta suscipit mauris. Suspendisse sit amet vestibulum neque, at aliquet
+      nibh. Aenean sed ante quam.
+    publicationsystem:NominalDate: 2020-10-11T00:00:00Z
+    publicationsystem:PubliclyAccessible: true
+    publicationsystem:Summary: "Lorem ipsum dolor sit amet, consectetur adipiscing\
+      \ elit. Duis convallis non massa vel dictum. In vel ex sapien. Donec sit amet\
+      \ leo lobortis, tempor ex ut, luctus eros. In in eleifend orci, nec suscipit\
+      \ nisi. Maecenas sed velit condimentum, lobortis tortor id, ultricies metus.\
+      \ Integer odio ante, congue pulvinar ultrices nec, mollis vitae dolor. Curabitur\
+      \ euismod erat elit, quis facilisis neque eleifend id. Maecenas convallis vel\
+      \ mi nec bibendum. Donec ut erat dictum, molestie dolor non, aliquet nibh.\r\
+      \n\r\nNunc at quam sed tellus ultricies sagittis. Cras et sem eu massa vehicula\
+      \ mattis. Sed tortor odio, elementum a elit at, sagittis luctus urna. Praesent\
+      \ neque diam, sagittis ac orci eget, feugiat consectetur elit. Phasellus vel\
+      \ aliquet risus. Etiam ac rutrum ipsum, quis malesuada odio. Sed in lobortis\
+      \ est. Morbi pellentesque pellentesque enim non pulvinar.\r\n\r\nQuisque blandit\
+      \ viverra pulvinar. Morbi accumsan bibendum ornare. Morbi commodo dolor pharetra\
+      \ justo venenatis hendrerit. Class aptent taciti sociosqu ad litora torquent\
+      \ per conubia nostra, per inceptos himenaeos. Donec a pellentesque sem, sed\
+      \ lobortis ex. Aenean quis purus ac felis gravida sagittis quis at elit. Phasellus\
+      \ nec lacus tristique, volutpat lacus id, sollicitudin augue. Cras pharetra\
+      \ dui arcu, non viverra nisi lacinia non. Vestibulum viverra mattis mauris in\
+      \ auctor. Fusce rutrum lorem non tincidunt efficitur. Cras in maximus justo,\
+      \ sed finibus turpis."
+    publicationsystem:Title: publication with datasets
+  /content[2]:
+    /publicationsystem:Attachments-v3:
+      /publicationsystem:attachmentResource:
+        externalstorage:reference: BD/9EBC19/attachment.pdf
+        externalstorage:size: 42197
+        externalstorage:url: https://files.local.nhsd.io/BD/9EBC19/attachment.pdf
+        hippo:filename: attachment.pdf
+        hippo:text:
+          resource: /content/documents/corporate-website/publication-system/acceptance-tests/publication-with-datasets/content/content[2]/Attachments-v3/attachmentResource/text.pdf
+          type: binary
+        jcr:data:
+          resource: /content/documents/corporate-website/publication-system/acceptance-tests/publication-with-datasets/content/content[2]/Attachments-v3/attachmentResource/data.pdf
+          type: binary
+        jcr:encoding: UTF-8
+        jcr:lastModified: 2018-04-27T09:30:16.588Z
+        jcr:mimeType: application/pdf
+        jcr:primaryType: externalstorage:resource
+      jcr:primaryType: publicationsystem:extattachment
+      publicationsystem:displayName: ''
+    /publicationsystem:RelatedLinks:
+      jcr:primaryType: publicationsystem:relatedlink
+      publicationsystem:linkText: Test google.com link
+      publicationsystem:linkUrl: http://google.com
+    /publicationsystem:ResourceLinks:
+      jcr:primaryType: publicationsystem:relatedlink
+      publicationsystem:linkText: Related resource link
+      publicationsystem:linkUrl: http://google.com
+    common:FacetType: publication
+    common:FullTaxonomy:
+    - people,-patients-and-geography
+    common:SearchableTags:
+    - People, patients and geography
+    common:orderedSearchDate: 1602374400000
+    common:searchRank: 4
+    common:searchable: true
+    hippo:availability:
+    - preview
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2017-11-03T13:35:36.812Z
+    hippostdpubwf:lastModificationDate: 2018-01-17T12:53:59.751Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippotaxonomy:keys:
+    - people,-patients-and-geography
+    hippotranslation:id: 00000000-0000-0000-0000-000000000000
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    - mix:versionable
+    jcr:primaryType: publicationsystem:publication
+    publicationsystem:AdministrativeSources: Admin sources
+    publicationsystem:CoverageEnd: 2018-02-01T00:00:00Z
+    publicationsystem:CoverageStart: 2017-11-01T00:00:00Z
+    publicationsystem:GeographicCoverage:
+    - England
+    publicationsystem:Granularity:
+    - NHS Trusts
+    - GP practices
+    publicationsystem:InformationType:
+    - Experimental statistics
+    publicationsystem:KeyFacts: Morbi egestas nisi at arcu pulvinar ultrices. Sed
+      et nunc risus. In hac habitasse platea dictumst. Proin ultrices, velit vitae
+      mollis aliquet, ligula ipsum tincidunt ante, nec imperdiet sapien neque a nibh.
+      In porta suscipit mauris. Suspendisse sit amet vestibulum neque, at aliquet
+      nibh. Aenean sed ante quam.
+    publicationsystem:NominalDate: 2020-10-11T00:00:00Z
+    publicationsystem:PubliclyAccessible: true
+    publicationsystem:Summary: "Lorem ipsum dolor sit amet, consectetur adipiscing\
+      \ elit. Duis convallis non massa vel dictum. In vel ex sapien. Donec sit amet\
+      \ leo lobortis, tempor ex ut, luctus eros. In in eleifend orci, nec suscipit\
+      \ nisi. Maecenas sed velit condimentum, lobortis tortor id, ultricies metus.\
+      \ Integer odio ante, congue pulvinar ultrices nec, mollis vitae dolor. Curabitur\
+      \ euismod erat elit, quis facilisis neque eleifend id. Maecenas convallis vel\
+      \ mi nec bibendum. Donec ut erat dictum, molestie dolor non, aliquet nibh.\r\
+      \n\r\nNunc at quam sed tellus ultricies sagittis. Cras et sem eu massa vehicula\
+      \ mattis. Sed tortor odio, elementum a elit at, sagittis luctus urna. Praesent\
+      \ neque diam, sagittis ac orci eget, feugiat consectetur elit. Phasellus vel\
+      \ aliquet risus. Etiam ac rutrum ipsum, quis malesuada odio. Sed in lobortis\
+      \ est. Morbi pellentesque pellentesque enim non pulvinar.\r\n\r\nQuisque blandit\
+      \ viverra pulvinar. Morbi accumsan bibendum ornare. Morbi commodo dolor pharetra\
+      \ justo venenatis hendrerit. Class aptent taciti sociosqu ad litora torquent\
+      \ per conubia nostra, per inceptos himenaeos. Donec a pellentesque sem, sed\
+      \ lobortis ex. Aenean quis purus ac felis gravida sagittis quis at elit. Phasellus\
+      \ nec lacus tristique, volutpat lacus id, sollicitudin augue. Cras pharetra\
+      \ dui arcu, non viverra nisi lacinia non. Vestibulum viverra mattis mauris in\
+      \ auctor. Fusce rutrum lorem non tincidunt efficitur. Cras in maximus justo,\
+      \ sed finibus turpis."
+    publicationsystem:Title: publication with datasets
+  /content[3]:
+    /publicationsystem:Attachments-v3:
+      /publicationsystem:attachmentResource:
+        externalstorage:reference: BD/9EBC19/attachment.pdf
+        externalstorage:size: 42197
+        externalstorage:url: https://files.local.nhsd.io/BD/9EBC19/attachment.pdf
+        hippo:filename: attachment.pdf
+        hippo:text:
+          resource: /content/documents/corporate-website/publication-system/acceptance-tests/publication-with-datasets/content/content[3]/Attachments-v3/attachmentResource/text.pdf
+          type: binary
+        jcr:data:
+          resource: /content/documents/corporate-website/publication-system/acceptance-tests/publication-with-datasets/content/content[3]/Attachments-v3/attachmentResource/data.pdf
+          type: binary
+        jcr:encoding: UTF-8
+        jcr:lastModified: 2018-04-27T09:30:16.588Z
+        jcr:mimeType: application/pdf
+        jcr:primaryType: externalstorage:resource
+      jcr:primaryType: publicationsystem:extattachment
+      publicationsystem:displayName: ''
+    /publicationsystem:RelatedLinks:
+      jcr:primaryType: publicationsystem:relatedlink
+      publicationsystem:linkText: Test google.com link
+      publicationsystem:linkUrl: http://google.com
+    /publicationsystem:ResourceLinks:
+      jcr:primaryType: publicationsystem:relatedlink
+      publicationsystem:linkText: Related resource link
+      publicationsystem:linkUrl: http://google.com
+    common:FacetType: publication
+    common:FullTaxonomy:
+    - people,-patients-and-geography
+    common:SearchableTags:
+    - People, patients and geography
+    common:orderedSearchDate: 1602374400000
+    common:searchRank: 4
+    common:searchable: true
+    hippo:availability:
+    - live
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2017-11-03T13:35:36.812Z
+    hippostdpubwf:lastModificationDate: 2018-01-17T12:53:59.751Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2018-01-17T12:54:04.104Z
+    hippotaxonomy:keys:
+    - people,-patients-and-geography
+    hippotranslation:id: 00000000-0000-0000-0000-000000000000
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    jcr:primaryType: publicationsystem:publication
+    publicationsystem:AdministrativeSources: Admin sources
+    publicationsystem:CoverageEnd: 2018-02-01T00:00:00Z
+    publicationsystem:CoverageStart: 2017-11-01T00:00:00Z
+    publicationsystem:GeographicCoverage:
+    - England
+    publicationsystem:Granularity:
+    - NHS Trusts
+    - GP practices
+    publicationsystem:InformationType:
+    - Experimental statistics
+    publicationsystem:KeyFacts: Morbi egestas nisi at arcu pulvinar ultrices. Sed
+      et nunc risus. In hac habitasse platea dictumst. Proin ultrices, velit vitae
+      mollis aliquet, ligula ipsum tincidunt ante, nec imperdiet sapien neque a nibh.
+      In porta suscipit mauris. Suspendisse sit amet vestibulum neque, at aliquet
+      nibh. Aenean sed ante quam.
+    publicationsystem:NominalDate: 2020-10-11T00:00:00Z
+    publicationsystem:PubliclyAccessible: true
+    publicationsystem:Summary: "Lorem ipsum dolor sit amet, consectetur adipiscing\
+      \ elit. Duis convallis non massa vel dictum. In vel ex sapien. Donec sit amet\
+      \ leo lobortis, tempor ex ut, luctus eros. In in eleifend orci, nec suscipit\
+      \ nisi. Maecenas sed velit condimentum, lobortis tortor id, ultricies metus.\
+      \ Integer odio ante, congue pulvinar ultrices nec, mollis vitae dolor. Curabitur\
+      \ euismod erat elit, quis facilisis neque eleifend id. Maecenas convallis vel\
+      \ mi nec bibendum. Donec ut erat dictum, molestie dolor non, aliquet nibh.\r\
+      \n\r\nNunc at quam sed tellus ultricies sagittis. Cras et sem eu massa vehicula\
+      \ mattis. Sed tortor odio, elementum a elit at, sagittis luctus urna. Praesent\
+      \ neque diam, sagittis ac orci eget, feugiat consectetur elit. Phasellus vel\
+      \ aliquet risus. Etiam ac rutrum ipsum, quis malesuada odio. Sed in lobortis\
+      \ est. Morbi pellentesque pellentesque enim non pulvinar.\r\n\r\nQuisque blandit\
+      \ viverra pulvinar. Morbi accumsan bibendum ornare. Morbi commodo dolor pharetra\
+      \ justo venenatis hendrerit. Class aptent taciti sociosqu ad litora torquent\
+      \ per conubia nostra, per inceptos himenaeos. Donec a pellentesque sem, sed\
+      \ lobortis ex. Aenean quis purus ac felis gravida sagittis quis at elit. Phasellus\
+      \ nec lacus tristique, volutpat lacus id, sollicitudin augue. Cras pharetra\
+      \ dui arcu, non viverra nisi lacinia non. Vestibulum viverra mattis mauris in\
+      \ auctor. Fusce rutrum lorem non tincidunt efficitur. Cras in maximus justo,\
+      \ sed finibus turpis."
+    publicationsystem:Title: publication with datasets
+  jcr:mixinTypes:
+  - mix:referenceable
+  jcr:primaryType: hippo:handle

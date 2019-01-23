@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <name>project-settings</name>
+    <applicationSubModule>application</applicationSubModule>
+    <beansFolder>site/src/main/java</beansFolder>
+    <cmsModule>cms</cmsModule>
+    <confirmParams>false</confirmParams>
+    <developmentSubModule>development</developmentSubModule>
+    <enterprise>true</enterprise>
+    <extraTemplates>true</extraTemplates>
+    <projectNamespace>website</projectNamespace>
+    <repositoryDataModule>repository-data</repositoryDataModule>
+    <selectedBeansPackage>uk.nhs.digital.website.beans</selectedBeansPackage>
+    <selectedComponentsPackage>uk.nhs.digital.website.components</selectedComponentsPackage>
+    <selectedProjectPackage>uk.nhs.digital.website</selectedProjectPackage>
+    <selectedRestPackage>uk.nhs.digital.website.rest</selectedRestPackage>
+    <setupDone>true</setupDone>
+    <siteModule>site</siteModule>
+    <templateLanguage>freemarker</templateLanguage>
+    <useSamples>false</useSamples>
+    <webfilesSubModule>webfiles</webfilesSubModule>
+</project>

@@ -1,0 +1,8 @@
+---
+definitions:
+  config:
+    /hst:hst/hst:sites:
+      .meta:residual-child-node-category: content
+      /common:
+        hst:content: /content/documents/corporate-website
+        jcr:primaryType: hst:site

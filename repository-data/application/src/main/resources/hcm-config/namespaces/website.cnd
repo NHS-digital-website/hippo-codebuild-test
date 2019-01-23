@@ -1,0 +1,84 @@
+<'website'='http://digital.nhs.uk/jcr/website/nt/1.0'>
+<'hippo'='http://www.onehippo.org/jcr/hippo/nt/2.0.4'>
+<'hippostd'='http://www.onehippo.org/jcr/hippostd/nt/2.0'>
+<'hippostdpubwf'='http://www.onehippo.org/jcr/hippostdpubwf/nt/1.0'>
+<'common'='http://digital.nhs.uk/jcr/common/nt/1.0'>
+<'hippotranslation'='http://www.onehippo.org/jcr/hippotranslation/nt/1.0'>
+<'hippotaxonomy'='http://www.hippoecm.org/hippotaxonomy/nt/1.2'>
+
+[website:assetlink] > hippo:compound, hippostd:relaxed
+  orderable
+
+[website:basedocument] > hippo:document, hippostd:publishableSummary, hippostdpubwf:document
+  orderable
+  - common:searchable (boolean) = 'true' autocreated
+
+[website:bannerdocument] > hippostd:relaxed, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:calltoaction] > hippostd:relaxed, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:componentlist] > hippostd:relaxed, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:effectivedate] > hippo:compound, hippostd:relaxed
+  orderable
+
+[website:emphasisBox] > hippo:compound, hippostd:relaxed
+  orderable
+
+[website:event] > hippostd:relaxed, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:externallink] > hippo:compound, hippostd:relaxed
+  orderable
+
+[website:friendlyurls] > hippo:compound, hippostd:relaxed
+  orderable
+
+[website:gdprsummary] > hippostd:relaxed, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:gdprtransparency] > hippostd:relaxed, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:general] > hippostd:relaxed, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:generalnonsearch] > hippostd:relaxed, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:hub] > hippostd:relaxed, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:internallink] > hippo:compound, hippostd:relaxed
+  orderable
+
+[website:interval] > hippo:compound, hippostd:relaxed
+  orderable
+
+[website:news] > hippostd:relaxed, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:publishedwork] > hippostd:relaxed, hippotaxonomy:classifiable, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:publishedworkchapter] > hippostd:relaxed, hippotaxonomy:classifiable, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:roadmap] > hippostd:relaxed, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:roadmapitem] > hippostd:relaxed, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:section] > hippo:compound, hippostd:relaxed
+  orderable
+
+[website:service] > hippostd:relaxed, hippotranslation:translated, website:basedocument
+  orderable
+
+[website:standards] > hippo:compound, hippostd:relaxed
+  orderable
+

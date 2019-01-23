@@ -1,0 +1,323 @@
+---
+definitions:
+  config:
+    /hippo:namespaces/nationalindicatorlibrary/indicator:
+      /editor:templates:
+        /_default_:
+          jcr:primaryType: frontend:plugincluster
+          frontend:properties:
+          - mode
+          frontend:references:
+          - wicket.model
+          - model.compareTo
+          - engine
+          - validator.id
+          frontend:services:
+          - wicket.id
+          - validator.id
+          /root:
+            extension.left: ${cluster.id}.left
+            extension.right: ${cluster.id}.right
+            jcr:primaryType: frontend:plugin
+            plugin.class: org.hippoecm.frontend.editor.layout.TwoColumn
+            wicket.extensions:
+            - extension.left
+            - extension.right
+          /left:
+            item: ${cluster.id}.left.item
+            jcr:primaryType: frontend:plugin
+            plugin.class: org.hippoecm.frontend.service.render.ListViewPlugin
+            wicket.id: ${cluster.id}.left
+          /right:
+            item: ${cluster.id}.right.item
+            jcr:primaryType: frontend:plugin
+            plugin.class: org.hippoecm.frontend.service.render.ListViewPlugin
+            wicket.id: ${cluster.id}.right
+          /title:
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+            caption: Title
+            field: title
+            hint: ''
+            jcr:primaryType: frontend:plugin
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.left.item
+          /seosummary:
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+              maxlength: '320'
+            caption: SEO Summary
+            field: seosummary
+            hint: Improve rank in Google. Include key information about what this
+              edition of the publication shows.
+            jcr:primaryType: frontend:plugin
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.left.item
+          /topbar:
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+            caption: Top Bar
+            field: topbar
+            hint: ''
+            jcr:primaryType: frontend:plugin
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.NodeFieldPlugin
+            wicket.id: ${cluster.id}.right.item
+          /assuredStatus:
+            /cluster.options:
+              falseLabel: Not Assured
+              jcr:primaryType: frontend:pluginconfig
+              trueLabel: Assured
+            caption: Assured Status
+            field: assuredStatus
+            hint: ''
+            jcr:primaryType: frontend:plugin
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.left.item
+          /publishedBy:
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+            caption: Published By
+            field: publishedBy
+            hint: ''
+            jcr:primaryType: frontend:plugin
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.left.item
+          /reportingLevel:
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+            caption: Reporting Level
+            field: reportingLevel
+            hint: ''
+            jcr:primaryType: frontend:plugin
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.left.item
+          /classifiable:
+            /cluster.options:
+              caption: Taxonomy
+              jcr:primaryType: frontend:pluginconfig
+              taxonomy.name: publication_taxonomy
+            essentials-taxonomy-name: publication_taxonomy
+            jcr:primaryType: frontend:plugin
+            mixin: hippotaxonomy:classifiable
+            plugin.class: org.hippoecm.frontend.editor.plugins.mixin.MixinLoaderPlugin
+            wicket.id: ${cluster.id}.left.item
+          /GeographicCoverage:
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+              source: /content/documents/administration/value-lists/geographic-coverage
+            caption: Geographic Coverage
+            field: GeographicCoverage
+            jcr:primaryType: frontend:plugin
+            multiselect.type: checkboxes
+            palette.alloworder: false
+            palette.maxrows: '10'
+            plugin.class: org.onehippo.forge.selection.frontend.plugin.DynamicMultiSelectPlugin
+            selectlist.maxrows: '10'
+            valuelist.provider: service.valuelist.default
+            wicket.id: ${cluster.id}.right.item
+          /assuranceDate:
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+            caption: Assurance Date
+            field: assuranceDate
+            hint: ''
+            jcr:primaryType: frontend:plugin
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
+            wicket.id: ${cluster.id}.left.item
+          /details:
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+            caption: Details
+            field: details
+            hint: ''
+            jcr:primaryType: frontend:plugin
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.NodeFieldPlugin
+            wicket.id: ${cluster.id}.left.item
+          /attachments:
+            /cluster.options:
+              jcr:primaryType: frontend:pluginconfig
+            caption: Attachments
+            field: attachments
+            jcr:primaryType: frontend:plugin
+            plugin.class: org.hippoecm.frontend.editor.plugins.field.NodeFieldPlugin
+            wicket.css:
+            - attachments
+            wicket.id: ${cluster.id}.left.item
+        jcr:primaryType: editor:templateset
+      /hipposysedit:nodetype:
+        /hipposysedit:nodetype:
+          /GeographicCoverage:
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: true
+            hipposysedit:ordered: false
+            hipposysedit:path: publicationsystem:GeographicCoverage
+            hipposysedit:primary: false
+            hipposysedit:type: String
+            jcr:primaryType: hipposysedit:field
+          /assuranceDate:
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: nationalindicatorlibrary:assuranceDate
+            hipposysedit:primary: false
+            hipposysedit:type: Date
+            jcr:primaryType: hipposysedit:field
+          /assuredStatus:
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: nationalindicatorlibrary:assuredStatus
+            hipposysedit:primary: false
+            hipposysedit:type: selection:BooleanRadioGroup
+            jcr:primaryType: hipposysedit:field
+          /attachments:
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: true
+            hipposysedit:ordered: false
+            hipposysedit:path: nationalindicatorlibrary:attachments
+            hipposysedit:primary: false
+            hipposysedit:type: publicationsystem:extattachment
+            jcr:primaryType: hipposysedit:field
+          /details:
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: nationalindicatorlibrary:details
+            hipposysedit:primary: false
+            hipposysedit:type: nationalindicatorlibrary:details
+            jcr:primaryType: hipposysedit:field
+          /publishedBy:
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: nationalindicatorlibrary:publishedBy
+            hipposysedit:primary: false
+            hipposysedit:type: String
+            hipposysedit:validators:
+            - non-empty
+            - required
+            jcr:primaryType: hipposysedit:field
+          /reportingLevel:
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: nationalindicatorlibrary:reportingLevel
+            hipposysedit:primary: false
+            hipposysedit:type: String
+            hipposysedit:validators:
+            - non-empty
+            - required
+            jcr:primaryType: hipposysedit:field
+          /seosummary:
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: publicationsystem:seosummary
+            hipposysedit:primary: false
+            hipposysedit:type: String
+            jcr:primaryType: hipposysedit:field
+          /title:
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: nationalindicatorlibrary:title
+            hipposysedit:primary: false
+            hipposysedit:type: String
+            hipposysedit:validators:
+            - non-empty
+            - required
+            jcr:primaryType: hipposysedit:field
+          /topbar:
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: nationalindicatorlibrary:topbar
+            hipposysedit:primary: false
+            hipposysedit:type: nationalindicatorlibrary:topbar
+            jcr:primaryType: hipposysedit:field
+          hipposysedit:node: true
+          hipposysedit:supertype:
+          - nationalindicatorlibrary:basedocument
+          - hippotaxonomy:classifiable
+          - hippostd:relaxed
+          - hippotranslation:translated
+          hipposysedit:uri: http://digital.nhs.uk/jcr/nationalindicatorlibrary/nt/1.0
+          jcr:mixinTypes:
+          - mix:referenceable
+          - hipposysedit:remodel
+          jcr:primaryType: hipposysedit:nodetype
+        jcr:mixinTypes:
+        - mix:referenceable
+        jcr:primaryType: hippo:handle
+      /hipposysedit:prototypes:
+        /hipposysedit:prototype:
+          /nationalindicatorlibrary:details:
+            /nationalindicatorlibrary:caveats:
+              hippostd:content: ''
+              jcr:primaryType: hippostd:html
+            /nationalindicatorlibrary:definition:
+              hippostd:content: ''
+              jcr:primaryType: hippostd:html
+            /nationalindicatorlibrary:interpretationGuidelines:
+              hippostd:content: ''
+              jcr:primaryType: hippostd:html
+            /nationalindicatorlibrary:methodology:
+              /nationalindicatorlibrary:calculation:
+                hippostd:content: ''
+                jcr:primaryType: hippostd:html
+              /nationalindicatorlibrary:dataSource:
+                hippostd:content: ''
+                jcr:primaryType: hippostd:html
+              /nationalindicatorlibrary:denominator:
+                hippostd:content: ''
+                jcr:primaryType: hippostd:html
+              /nationalindicatorlibrary:numerator:
+                hippostd:content: ''
+                jcr:primaryType: hippostd:html
+              jcr:primaryType: nationalindicatorlibrary:methodology
+            /nationalindicatorlibrary:purpose:
+              hippostd:content: ''
+              jcr:primaryType: hippostd:html
+            jcr:mixinTypes:
+            - hippotaxonomy:classifiable
+            jcr:primaryType: nationalindicatorlibrary:details
+            nationalindicatorlibrary:briefDescription: ''
+            nationalindicatorlibrary:iapCode: ''
+            nationalindicatorlibrary:indicatorSet: ''
+            nationalindicatorlibrary:rating: ''
+          /nationalindicatorlibrary:topbar:
+            /nationalindicatorlibrary:contactAuthor:
+              jcr:primaryType: nationalindicatorlibrary:contactAuthor
+              nationalindicatorlibrary:contactAuthorEmail: ''
+              nationalindicatorlibrary:contactAuthorName: ''
+            jcr:primaryType: nationalindicatorlibrary:topbar
+            nationalindicatorlibrary:basedOn: ''
+            nationalindicatorlibrary:reportingPeriod: ''
+            nationalindicatorlibrary:reviewDate: 0001-01-01T12:00:00Z
+          common:FacetType: indicator
+          common:searchRank: 4
+          common:searchable: true
+          hippostd:holder: holder
+          hippostd:state: draft
+          hippostdpubwf:createdBy: ''
+          hippostdpubwf:creationDate: 2018-02-21T16:40:31.411Z
+          hippostdpubwf:lastModificationDate: 2018-02-21T16:40:31.411Z
+          hippostdpubwf:lastModifiedBy: ''
+          hippotranslation:id: document-type-locale-id
+          hippotranslation:locale: document-type-locale
+          jcr:mixinTypes:
+          - hippotaxonomy:classifiable
+          - mix:referenceable
+          jcr:primaryType: nationalindicatorlibrary:indicator
+          nationalindicatorlibrary:assuranceDate: 0001-01-01T12:00:00Z
+          nationalindicatorlibrary:assuredStatus: false
+          nationalindicatorlibrary:publishedBy: ''
+          nationalindicatorlibrary:reportingLevel: ''
+          nationalindicatorlibrary:title: ''
+          publicationsystem:GeographicCoverage: []
+          publicationsystem:seosummary: ''
+        jcr:primaryType: hipposysedit:prototypeset
+      jcr:mixinTypes:
+      - editor:editable
+      - mix:referenceable
+      jcr:primaryType: hipposysedit:templatetype

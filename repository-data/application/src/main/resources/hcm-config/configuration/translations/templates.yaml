@@ -1,0 +1,130 @@
+---
+definitions:
+  config:
+    /hippo:configuration/hippo:translations/hippo:templates/en:
+      new-about-document: new about document
+      new-cihub-document: new CI hub document
+      new-digital-website-document: new document
+      new-digital-website-folder: new folder
+      new-enterprise-forms-document: new enterprise form document
+      new-national-indicator-library-document: new indicator
+      new-national-indicator-library-folder: new folder
+      new-statistical-publications-and-clinical-indicators-document: new document
+      new-statistical-publications-and-clinical-indicators-folder: new folder
+      new-translated-folder: new folder
+    /hippo:configuration/hippo:translations/hippo:types:
+      /publicationsystem:archive:
+        /en:
+          jcr:name: Archive
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /publicationsystem:chartSection:
+        /en:
+          jcr:name: Chart
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /publicationsystem:dataset:
+        /en:
+          jcr:name: Data set
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /publicationsystem:imageSection:
+        /en:
+          jcr:name: Image
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /publicationsystem:legacypublication:
+        /en:
+          jcr:name: Legacy Publication
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /publicationsystem:mapSection:
+        /en:
+          jcr:name: Map
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /publicationsystem:publication:
+        /en:
+          jcr:name: Publication
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /publicationsystem:publicationPage:
+        /en:
+          jcr:name: Publication Page
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /publicationsystem:relatedlink:
+        /en:
+          jcr:name: Link
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /publicationsystem:series:
+        /en:
+          jcr:name: Series / Collection
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /publicationsystem:textSection:
+        /en:
+          jcr:name: Text
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /website:bannerdocument:
+        /en:
+          jcr:name: Banner
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /website:componentlist:
+        /en:
+          jcr:name: Links list
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /website:effectivedate:
+        /en:
+          jcr:name: Effective date
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /website:emphasisBox:
+        /en:
+          jcr:name: Emphasis Box
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /website:general:
+        /en:
+          jcr:name: General
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /website:generalnonsearch:
+        /en:
+          jcr:name: General non searchable
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /website:hub:
+        /en:
+          jcr:name: Hub
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /website:publishedwork:
+        /en:
+          jcr:name: Published Work
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /website:publishedworkchapter:
+        /en:
+          jcr:name: Published Work Chapter
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /website:roadmap:
+        /en:
+          jcr:name: Roadmap
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /website:roadmapitem:
+        /en:
+          jcr:name: Roadmap Item
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles
+      /website:service:
+        /en:
+          jcr:name: Service
+          jcr:primaryType: hipposys:resourcebundle
+        jcr:primaryType: hipposys:resourcebundles

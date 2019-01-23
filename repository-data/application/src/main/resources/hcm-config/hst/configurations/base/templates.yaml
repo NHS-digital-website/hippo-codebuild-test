@@ -1,0 +1,26 @@
+---
+definitions:
+  config:
+    /hst:hst/hst:configurations/base/hst:templates:
+      /404:
+        hst:renderpath: webfile:/freemarker/common/404.ftl
+        jcr:primaryType: hst:template
+      /base:
+        hst:renderpath: webfile:/freemarker/common/base-layout.ftl
+        jcr:primaryType: hst:template
+      /breadcrumb:
+        hst:renderpath: webfile:/freemarker/common/breadcrumb.ftl
+        jcr:primaryType: hst:template
+      /breadcrumb-ci:
+        hst:renderpath: webfile:/freemarker/common/breadcrumb-ci.ftl
+        jcr:primaryType: hst:template
+      /breadcrumb-ci-old-styling:
+        hst:renderpath: webfile:/freemarker/common/breadcrumb-ci-old-styling.ftl
+        jcr:primaryType: hst:template
+      /footer:
+        hst:renderpath: webfile:/freemarker/common/base-footer.ftl
+        jcr:primaryType: hst:template
+      /searchbar:
+        hst:renderpath: webfile:/freemarker/common/searchbar.ftl
+        jcr:primaryType: hst:template
+      jcr:primaryType: hst:templates

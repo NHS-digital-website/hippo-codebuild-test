@@ -1,0 +1,8 @@
+---
+group:
+  after: hippo-cms
+  name: publicationsystem
+module:
+  after: website-repository-data-application
+  name: website-repository-data-local
+project: publicationsystem

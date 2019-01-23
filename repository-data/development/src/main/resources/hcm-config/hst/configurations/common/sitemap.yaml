@@ -1,0 +1,51 @@
+---
+definitions:
+  config:
+    /hst:hst/hst:configurations/common/hst:sitemap/static-ui:
+      /_any_:
+        hst:componentconfigurationid: hst:pages/static-ui-home
+        hst:relativecontentpath: static-ui/${1}
+        jcr:primaryType: hst:sitemapitem
+      /eform:
+        hst:componentconfigurationid: hst:pages/static-ui-eform
+        hst:relativecontentpath: static-ui/eform
+        jcr:primaryType: hst:sitemapitem
+      /filtered-list:
+        hst:componentconfigurationid: hst:pages/static-ui-filtered-list
+        hst:relativecontentpath: static-ui/filtered-list
+        jcr:primaryType: hst:sitemapitem
+      /general:
+        hst:componentconfigurationid: hst:pages/static-ui-general
+        hst:relativecontentpath: static-ui/general
+        jcr:primaryType: hst:sitemapitem
+      /home:
+        hst:componentconfigurationid: hst:pages/static-ui-home
+        hst:relativecontentpath: static-ui/home
+        jcr:primaryType: hst:sitemapitem
+      /hub:
+        hst:componentconfigurationid: hst:pages/static-ui-hub
+        hst:relativecontentpath: static-ui/hub
+        jcr:primaryType: hst:sitemapitem
+      /icons:
+        hst:componentconfigurationid: hst:pages/static-ui-icons
+        hst:relativecontentpath: static-ui/icons
+        jcr:primaryType: hst:sitemapitem
+      /latest-events:
+        hst:componentconfigurationid: hst:pages/static-ui-latest-events
+        hst:relativecontentpath: static-ui/latest-events
+        jcr:primaryType: hst:sitemapitem
+      /list:
+        hst:componentconfigurationid: hst:pages/static-ui-list
+        hst:relativecontentpath: static-ui/list
+        jcr:primaryType: hst:sitemapitem
+      /news-hub:
+        hst:componentconfigurationid: hst:pages/static-ui-news-hub
+        hst:relativecontentpath: static-ui/news-hub
+        jcr:primaryType: hst:sitemapitem
+      /service:
+        hst:componentconfigurationid: hst:pages/static-ui-service
+        hst:relativecontentpath: static-ui/service
+        jcr:primaryType: hst:sitemapitem
+      hst:componentconfigurationid: hst:pages/static-ui-home
+      hst:relativecontentpath: static-ui
+      jcr:primaryType: hst:sitemapitem

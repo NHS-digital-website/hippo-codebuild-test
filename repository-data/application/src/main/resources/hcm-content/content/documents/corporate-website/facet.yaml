@@ -1,0 +1,29 @@
+---
+/content/documents/corporate-website/facet:
+  hippo:docbase: 12345678-1234-1234-1234-123456789abc
+  hippofacnav:facetnodenames:
+  - assuredStatus
+  - document-type
+  - year${sortby:'facetvalue', sortorder:'descending'}
+  - month${after:'year', sortby:'facetvalue', sortorder:'descending',hide:'year'}
+  - publicationStatus
+  - category
+  - information-type
+  - geographical-coverage
+  - geographical-granularity
+  - publishedBy
+  - reportingLevel
+  hippofacnav:facets:
+  - nationalindicatorlibrary:assuredStatus
+  - common:FacetType
+  - publicationsystem:NominalDate$year
+  - publicationsystem:NominalDate$month
+  - publicationsystem:PubliclyAccessible
+  - common:FullTaxonomy
+  - publicationsystem:InformationType
+  - publicationsystem:GeographicCoverage
+  - publicationsystem:Granularity
+  - nationalindicatorlibrary:publishedBy
+  - nationalindicatorlibrary:reportingLevel
+  hippofacnav:limit: 100
+  jcr:primaryType: hippofacnav:facetnavigation

@@ -1,0 +1,64 @@
+---
+##
+# AWS Code Build spec for building and deploying Hippo CMS
+#
+
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - apt-get update
+      - apt-get install -qqy software-properties-common python-software-properties
+      - apt-get install -qqy build-essential git awscli curl python-pip python-dev
+      - pip install virtualenv
+
+      # Java 8 install
+      - echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
+      - add-apt-repository -y ppa:webupd8team/java
+      - apt-get update
+      - apt-get install -y oracle-java8-installer || echo "this should fail"
+      - cd /var/lib/dpkg/info
+        && sed -i 's|JAVA_VERSION=8u191|JAVA_VERSION=8u201|' oracle-java8-installer.*
+        && sed -i 's|PARTNER_URL=http://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c269598db4e85c51e0c/|PARTNER_URL=http://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/|' oracle-java8-installer.*
+        && sed -i 's|SHA256SUM_TGZ="53c29507e2405a7ffdbba627e6d64856089b094867479edc5ede4105c1da0d65"|SHA256SUM_TGZ="cb700cc0ac3ddc728a567c350881ce7e25118eaf7ca97ca9705d4580c506e370"|' oracle-java8-installer.*
+        && sed -i 's|J_DIR=jdk1.8.0_191|J_DIR=jdk1.8.0_201|' oracle-java8-installer.*
+      - apt-get install -y oracle-java8-installer maven
+      # - rm -rf /var/lib/apt/lists/*
+      - rm -rf /var/cache/oracle-jdk8-installer
+
+      # SSH key
+      - aws s3 cp s3://config.mgt.nhsd.io/codebuild/hippo_build/nhs-ci_rsa $HOME/.ssh/nhs-ci_rsa
+      - aws s3 cp s3://config.mgt.nhsd.io/codebuild/hippo_build/nhs-ci_rsa.pub $HOME/.ssh/nhs-ci_rsa.pub
+      - chmod 600 $HOME/.ssh/nhs-ci_rsa
+
+      # Rundeck credentials
+      - aws s3 cp s3://config.mgt.nhsd.io/codebuild/hippo_build/rd.password $HOME/rd.password
+
+      # BRC credentials
+      - aws s3 cp s3://config.mgt.nhsd.io/codebuild/hippo_build/brc.username $HOME/rd.username
+      - aws s3 cp s3://config.mgt.nhsd.io/codebuild/hippo_build/brc.password $HOME/rd.password
+
+      # Add static.hosting.onehippo.com and github.com, and BloomReach Cloud as known host
+      - touch $HOME/.ssh/known_hosts
+      - ssh-keygen -R static.hosting.onehippo.com
+      - ssh-keyscan static.hosting.onehippo.com >> $HOME/.ssh/known_hosts
+      - ssh-keygen -R github.com
+      - ssh-keyscan github.com >> $HOME/.ssh/known_hosts
+      - ssh-keygen -R missioncontrol-nhsdigitaltrail.onehippo.io
+      - ssh-keyscan missioncontrol-nhsdigitaltrail.onehippo.io >> $HOME/.ssh/known_hosts
+
+  build:
+    commands:
+      # Build
+      - cd ci-cd && make clean build
+      # Upload tgz files to various destinations
+      #- ssh-agent bash -c "
+      #  ssh-add $HOME/.ssh/nhs-ci_rsa &&
+      #  cd ci-cd && make ondemand.upload"
+      # Deploy to DEV Environment
+      #- . $HOME/rd.password && cd ci-cd && make ondemand.deploy
+
+artifacts:
+  files:
+    - "**/*"

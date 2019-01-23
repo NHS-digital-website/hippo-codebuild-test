@@ -1,0 +1,150 @@
+---
+/content/documents/corporate-website/publication-system/lorem-ipsum-content/nullam-vel-ligula-dapibus:
+  /nullam-vel-ligula-dapibus[1]:
+    common:FacetType: publication
+    common:FullTaxonomy:
+    - falls
+    - infectious-diseases
+    - workforce
+    - conditions
+    - accidents-and-injuries
+    common:SearchableTags:
+    - Falls
+    - Infectious diseases
+    - Workforce
+    common:orderedSearchDate: 1496275200000
+    common:searchRank: 4
+    common:searchable: true
+    hippo:availability: []
+    hippostd:state: draft
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModificationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippotaxonomy:keys:
+    - falls
+    - infectious-diseases
+    - workforce
+    hippotranslation:id: 00000000-0000-0000-0000-000000000000
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    jcr:primaryType: publicationsystem:publication
+    publicationsystem:AdministrativeSources: ''
+    publicationsystem:CoverageEnd: 2017-04-01T00:00:00Z
+    publicationsystem:CoverageStart: 2017-01-01T00:00:00Z
+    publicationsystem:InformationType:
+    - National statistics
+    publicationsystem:KeyFacts: ''
+    publicationsystem:NominalDate: 2017-06-01T00:00:00Z
+    publicationsystem:PubliclyAccessible: true
+    publicationsystem:Summary: Vivamus eros ipsum, facilisis vitae orci sit amet,
+      viverra commodo sem. Phasellus commodo turpis non ultrices feugiat. Proin non
+      metus diam. Pellentesque ipsum morbi tristique senectus et netus et malesuada
+      fames ac turpis egestas. Pellentesque habitant morbi tristique senectus et ipsum
+      et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus
+      orci luctus et ultrices posuere cubilia Curae; Duis justo magna, ipsum id iaculis
+      eget, tempor sit amet ante.
+    publicationsystem:Title: Nullam vel ligula dapibus
+  /nullam-vel-ligula-dapibus[2]:
+    common:FacetType: publication
+    common:FullTaxonomy:
+    - falls
+    - infectious-diseases
+    - workforce
+    - conditions
+    - accidents-and-injuries
+    common:SearchableTags:
+    - Falls
+    - Infectious diseases
+    - Workforce
+    common:orderedSearchDate: 1496275200000
+    common:searchRank: 4
+    common:searchable: true
+    hippo:availability:
+    - preview
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModificationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippotaxonomy:keys:
+    - falls
+    - infectious-diseases
+    - workforce
+    hippotranslation:id: 00000000-0000-0000-0000-000000000000
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    - mix:versionable
+    jcr:primaryType: publicationsystem:publication
+    publicationsystem:AdministrativeSources: ''
+    publicationsystem:CoverageEnd: 2017-04-01T00:00:00Z
+    publicationsystem:CoverageStart: 2017-01-01T00:00:00Z
+    publicationsystem:InformationType:
+    - National statistics
+    publicationsystem:KeyFacts: ''
+    publicationsystem:NominalDate: 2017-06-01T00:00:00Z
+    publicationsystem:PubliclyAccessible: true
+    publicationsystem:Summary: Vivamus eros ipsum, facilisis vitae orci sit amet,
+      viverra commodo sem. Phasellus commodo turpis non ultrices feugiat. Proin non
+      metus diam. Pellentesque ipsum morbi tristique senectus et netus et malesuada
+      fames ac turpis egestas. Pellentesque habitant morbi tristique senectus et ipsum
+      et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus
+      orci luctus et ultrices posuere cubilia Curae; Duis justo magna, ipsum id iaculis
+      eget, tempor sit amet ante.
+    publicationsystem:Title: Nullam vel ligula dapibus
+  /nullam-vel-ligula-dapibus[3]:
+    common:FacetType: publication
+    common:FullTaxonomy:
+    - falls
+    - infectious-diseases
+    - workforce
+    - conditions
+    - accidents-and-injuries
+    common:SearchableTags:
+    - Falls
+    - Infectious diseases
+    - Workforce
+    common:orderedSearchDate: 1496275200000
+    common:searchRank: 4
+    common:searchable: true
+    hippo:availability:
+    - live
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModificationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2017-10-16T14:00:00Z
+    hippotaxonomy:keys:
+    - falls
+    - infectious-diseases
+    - workforce
+    hippotranslation:id: 00000000-0000-0000-0000-000000000000
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    jcr:primaryType: publicationsystem:publication
+    publicationsystem:AdministrativeSources: ''
+    publicationsystem:CoverageEnd: 2017-04-01T00:00:00Z
+    publicationsystem:CoverageStart: 2017-01-01T00:00:00Z
+    publicationsystem:InformationType:
+    - National statistics
+    publicationsystem:KeyFacts: ''
+    publicationsystem:NominalDate: 2017-06-01T00:00:00Z
+    publicationsystem:PubliclyAccessible: true
+    publicationsystem:Summary: Vivamus eros ipsum, facilisis vitae orci sit amet,
+      viverra commodo sem. Phasellus commodo turpis non ultrices feugiat. Proin non
+      metus diam. Pellentesque ipsum morbi tristique senectus et netus et malesuada
+      fames ac turpis egestas. Pellentesque habitant morbi tristique senectus et ipsum
+      et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus
+      orci luctus et ultrices posuere cubilia Curae; Duis justo magna, ipsum id iaculis
+      eget, tempor sit amet ante.
+    publicationsystem:Title: Nullam vel ligula dapibus
+  jcr:mixinTypes:
+  - mix:referenceable
+  jcr:primaryType: hippo:handle

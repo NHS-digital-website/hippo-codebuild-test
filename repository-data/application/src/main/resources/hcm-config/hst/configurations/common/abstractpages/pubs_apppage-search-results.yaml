@@ -1,0 +1,22 @@
+---
+definitions:
+  config:
+    /hst:hst/hst:configurations/common/hst:abstractpages/pubs_apppage-search-results:
+      /top:
+        hst:componentclassname: uk.nhs.digital.common.components.SearchBarComponent
+        hst:template: pubs_searchbar
+        jcr:primaryType: hst:component
+      /top-menu:
+        hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsMenuComponent
+        hst:parameternames:
+        - selectedMenu
+        - level
+        - menu
+        hst:parametervalues:
+        - 'on'
+        - '1'
+        - main
+        hst:template: base-top-menu
+        jcr:primaryType: hst:component
+      hst:template: pubs_app-layout-search-results
+      jcr:primaryType: hst:component

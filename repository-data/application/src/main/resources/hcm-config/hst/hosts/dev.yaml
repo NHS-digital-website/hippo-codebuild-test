@@ -1,0 +1,18 @@
+---
+definitions:
+  config:
+    /hst:hst/hst:hosts/dev:
+      /io:
+        /nhsd:
+          /dev:
+            /content:
+              .meta:residual-child-node-category: content
+              jcr:primaryType: hst:virtualhost
+            /hst:root:
+              hst:mountpoint: /hst:hst/hst:sites/common
+              jcr:primaryType: hst:mount
+            jcr:primaryType: hst:virtualhost
+          jcr:primaryType: hst:virtualhost
+        jcr:primaryType: hst:virtualhost
+      hst:cmslocation: https://cms-dev.nhsd.io
+      jcr:primaryType: hst:virtualhostgroup

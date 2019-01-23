@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<!DOCTYPE configuration SYSTEM "http://jackrabbit.apache.org/dtd/indexing-configuration-1.1.dtd">
+<!--
+Check documentation page for more details:
+https://wiki.apache.org/jackrabbit/IndexingConfiguration
+-->
+<configuration
+    xmlns:hippostd="http://www.onehippo.org/jcr/hippostd/nt/2.0"
+    xmlns:hippostdpubwf="http://www.onehippo.org/jcr/hippostdpubwf/nt/1.0"
+    xmlns:publicationsystem="http://digital.nhs.uk/jcr/publicationsystem/nt/1.0"
+    xmlns:nationalindicatorlibrary="http://digital.nhs.uk/jcr/nationalindicatorlibrary/nt/1.0"
+    xmlns:common="http://digital.nhs.uk/jcr/common/nt/1.0"
+    xmlns:website="http://digital.nhs.uk/jcr/website/nt/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+>
+    <index-rule nodeType="publicationsystem:publication">
+        <property>publicationsystem:Title</property>
+        <property>publicationsystem:Summary</property>
+        <property>common:SearchableTags</property>
+        <property>publicationsystem:KeyFacts</property>
+        <property isRegexp="true" nodeScopeIndex="false">.*:.*</property>
+    </index-rule>
+
+    <index-rule nodeType="nationalindicatorlibrary:indicator">
+        <property>nationalindicatorlibrary:title</property>
+        <property>nationalindicatorlibrary:definition</property>
+        <property>nationalindicatorlibrary:purpose</property>
+        <property>common:SearchableTags</property>
+        <property isRegexp="true" nodeScopeIndex="false">.*:.*</property>
+    </index-rule>
+
+    <index-rule nodeType="publicationsystem:series">
+        <property>publicationsystem:Title</property>
+        <property>publicationsystem:Summary</property>
+        <property isRegexp="true" nodeScopeIndex="false">.*:.*</property>
+    </index-rule>
+
+    <index-rule nodeType="publicationsystem:dataset">
+        <property>publicationsystem:Title</property>
+        <property>publicationsystem:Summary</property>
+        <property>common:SearchableTags</property>
+        <property isRegexp="true" nodeScopeIndex="false">.*:.*</property>
+    </index-rule>
+
+    <index-rule nodeType="publicationsystem:archive">
+        <property>publicationsystem:Title</property>
+        <property>publicationsystem:Summary</property>
+        <property isRegexp="true" nodeScopeIndex="false">.*:.*</property>
+    </index-rule>
+
+    <!--<index-rule nodeType="hippostd:html"
+                condition="@element(website:contactdetails, hippostd:html)/@jcr:primaryType='html'">
+    </index-rule>
+
+    <index-rule nodeType="hippostd:html"
+                condition="@element(website:toptasks, hippostd:html)/@jcr:primaryType='{http://www.onehippo.org/jcr/hippostd/nt/2.0}html'">
+    </index-rule>
+
+    <index-rule nodeType="hippostd:html"
+                condition="@element(website:introduction, hippostd:html)/@jcr:primaryType='{http://www.onehippo.org/jcr/hippostd/nt/2.0}html'">
+    </index-rule>-->
+
+    <index-rule nodeType="website:externallink">
+    </index-rule>
+
+
+    <index-rule nodeType="website:service">
+        <property>website:title</property>
+        <property>website:summary</property>
+        <property>website:shortsummary</property>
+        <property>website:seosummary</property>
+        <property>website:sections</property>
+        <property>website:component</property>
+        <property isRegexp="true" nodeScopeIndex="false">.*:.*</property>
+    </index-rule>
+
+    <index-rule nodeType="website:general">
+        <property>website:title</property>
+        <property>website:summary</property>
+        <property>website:shortsummary</property>
+        <property>website:seosummary</property>
+        <property>website:sections</property>
+        <property>website:component</property>
+        <property isRegexp="true" nodeScopeIndex="false">.*:.*</property>
+    </index-rule>
+
+    <index-rule nodeType="website:hub">
+        <property>website:title</property>
+        <property>website:summary</property>
+        <property>website:shortsummary</property>
+        <property>website:seosummary</property>
+        <property>website:body</property>
+        <property isRegexp="true" nodeScopeIndex="false">.*:.*</property>
+    </index-rule>
+
+    <index-rule nodeType="website:news">
+        <property>website:title</property>
+        <property>website:shortsummary</property>
+        <property>website:seosummary</property>
+        <property>website:body</property>
+        <property>website:type</property>
+        <property isRegexp="true" nodeScopeIndex="false">.*:.*</property>
+    </index-rule>
+
+    <index-rule nodeType="website:event">
+        <property>website:title</property>
+        <property>website:shortsummary</property>
+        <property>website:seosummary</property>
+        <property>website:body</property>
+        <property>website:type</property>
+        <property isRegexp="true" nodeScopeIndex="false">.*:.*</property>
+    </index-rule>
+
+    <index-rule nodeType="website:publishedwork">
+        <property>website:title</property>
+        <property>website:summary</property>
+        <property>website:shortsummary</property>
+        <property>website:seosummary</property>
+        <property>website:highlightsContent</property>
+        <property>website:sections</property>
+        <property isRegexp="true" nodeScopeIndex="false">.*:.*</property>
+    </index-rule>
+
+    <index-rule nodeType="website:publishedworkchapter">
+        <property>website:title</property>
+        <property>website:summary</property>
+        <property>website:shortsummary</property>
+        <property>website:seosummary</property>
+        <property>website:sections</property>
+        <property isRegexp="true" nodeScopeIndex="false">.*:.*</property>
+    </index-rule>
+
+    <index-rule nodeType="website:componentlist">
+        <property>website:title</property>
+        <property>website:summary</property>
+        <property>website:shortsummary</property>
+        <property>website:seosummary</property>
+        <property>website:body</property>
+        <property isRegexp="true" nodeScopeIndex="false">.*:.*</property>
+    </index-rule>
+
+    <index-rule nodeType="website:roadmap">
+        <property>website:title</property>
+        <property>website:summary</property>
+        <property>website:shortsummary</property>
+        <property>website:seosummary</property>
+        <property isRegexp="true" nodeScopeIndex="false">.*:.*</property>
+    </index-rule>
+
+    <index-rule nodeType="website:roadmapitem">
+        <property>website:title</property>
+        <property>website:summary</property>
+        <property>website:shortsummary</property>
+        <property>website:seosummary</property>
+        <property>website:markers</property>
+        <property>website:sections</property>
+        <property>website:standards</property>
+        <property isRegexp="true" nodeScopeIndex="false">.*:.*</property>
+    </index-rule>
+
+    <!-- hippo aggregates -->
+    <aggregates>
+        <nodetype>hippostd:html</nodetype>
+        <childtype>hippostd:date</childtype>
+    </aggregates>
+
+    <excludefromnodescope>
+        <nodetype>hippostd:state</nodetype>
+        <nodetype>hippostd:stateSummary</nodetype>
+        <nodetype>hippostd:holder</nodetype>
+        <nodetype>hippostdpubwf:createdBy</nodetype>
+        <nodetype>hippostdpubwf:lastModifiedBy</nodetype>
+        <nodetype>hippo:docbase</nodetype>
+        <nodetype>hippo:paths</nodetype>
+        <nodetype>hipposys:active</nodetype>
+        <nodetype>hipposys:password</nodetype>
+        <nodetype>hipposys:system</nodetype>
+    </excludefromnodescope>
+
+    <nosingleindexterm>
+        <property>hippostd:content</property>
+    </nosingleindexterm>
+
+    <facets>
+        <excludeproperty>hippostd:content</excludeproperty>
+    </facets>
+
+</configuration>

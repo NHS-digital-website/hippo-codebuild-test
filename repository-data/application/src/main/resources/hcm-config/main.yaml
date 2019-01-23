@@ -1,0 +1,43 @@
+---
+definitions:
+  config:
+    /hippo:configuration/hippo:domains/hippofolders/readonly:
+      hipposys:groups:
+        operation: add
+        type: string
+        value:
+        - sitewriters
+    /hippo:configuration/hippo:domains/live-documents/readonly:
+      hipposys:groups:
+        operation: add
+        type: string
+        value:
+        - liveusers
+    /hippo:configuration/hippo:domains/preview-documents/readonly:
+      hipposys:groups:
+        operation: add
+        type: string
+        value:
+        - previewusers
+    /hippo:configuration/hippo:groups/webmaster:
+      .meta:delete: true
+    /hippo:configuration/hippo:modules/webfiles/hippo:moduleconfig:
+      maxFileLengthKb: 300
+      watchedModules:
+      - repository-data/webfiles
+  namespace:
+    common:
+      cnd: namespaces/common.cnd
+      uri: http://digital.nhs.uk/jcr/common/nt/1.0
+    externalstorage:
+      cnd: namespaces/externalstorage.cnd
+      uri: http://digital.nhs.uk/jcr/externalstorage/nt/1.0
+    nationalindicatorlibrary:
+      cnd: namespaces/nationalindicatorlibrary.cnd
+      uri: http://digital.nhs.uk/jcr/nationalindicatorlibrary/nt/1.0
+    publicationsystem:
+      cnd: namespaces/publicationsystem.cnd
+      uri: http://digital.nhs.uk/jcr/publicationsystem/nt/1.0
+    website:
+      cnd: namespaces/website.cnd
+      uri: http://digital.nhs.uk/jcr/website/nt/1.0

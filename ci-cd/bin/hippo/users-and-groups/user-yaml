@@ -1,0 +1,30 @@
+#!/bin/bash
+
+function main {
+    local name="$1"
+    local email="$2"
+    local firstName
+    local lastName
+    local id
+    local password
+
+    firstName=$(echo "$name" | awk '{print $1;}')
+    lastName=$(echo "$name" | awk '{print $2;}')
+    id=$(echo "${name}" | sed -e 's/ /./' | tr '[:upper:]' '[:lower:]')
+    password=$(openssl rand -base64 12)
+
+    echo "
+  # ${name}
+  # ${email} ${id} ${password}
+  /${id}:
+    jcr:primaryType: hipposys:user
+    hipposys:active: true
+    hipposys:email: \"${email}\"
+    hipposys:firstname: \"${firstName}\"
+    hipposys:lastname: \"${lastName}\"
+    hipposys:password: \"${password}\"
+    hipposys:securityprovider: internal
+"
+}
+
+main "$@"

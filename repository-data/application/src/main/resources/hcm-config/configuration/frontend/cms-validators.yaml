@@ -1,0 +1,35 @@
+---
+definitions:
+  config:
+    /hippo:configuration/hippo:frontend/cms/cms-validators/publicationsystem-attachment:
+      jcr:primaryType: frontend:plugin
+      plugin.class: uk.nhs.digital.ps.AttachmentFieldValidator
+    /hippo:configuration/hippo:frontend/cms/cms-validators/publicationsystem-charts-datafile:
+      jcr:primaryType: frontend:plugin
+      plugin.class: uk.nhs.digital.ps.chart.HighchartsDataFileValidator
+    /hippo:configuration/hippo:frontend/cms/cms-validators/publicationsystem-coverage-dates:
+      jcr:primaryType: frontend:plugin
+      plugin.class: uk.nhs.digital.ps.CoverageDatesValidator
+    /hippo:configuration/hippo:frontend/cms/cms-validators/publicationsystem-dropdown-granularity:
+      fieldDisplayName: Granularity
+      jcr:primaryType: frontend:plugin
+      plugin.class: uk.nhs.digital.ps.StaticDropdownSelectionFieldValidator
+    /hippo:configuration/hippo:frontend/cms/cms-validators/publicationsystem-dropdown-information-type:
+      fieldDisplayName: Information Type
+      jcr:primaryType: frontend:plugin
+      plugin.class: uk.nhs.digital.ps.StaticDropdownSelectionFieldValidator
+    /hippo:configuration/hippo:frontend/cms/cms-validators/publicationsystem-publication-date:
+      jcr:primaryType: frontend:plugin
+      plugin.class: uk.nhs.digital.ps.PublicationDateValidator
+      validPeriodLengthInYears: 7
+    /hippo:configuration/hippo:frontend/cms/cms-validators/publicationsystem-title:
+      jcr:primaryType: frontend:plugin
+      max_length: 250
+      plugin.class: uk.nhs.digital.ps.TextLengthValidator
+    /hippo:configuration/hippo:frontend/cms/cms-validators/valid-url:
+      jcr:primaryType: frontend:plugin
+      plugin.class: org.hippoecm.frontend.editor.validator.plugins.RegExCmsValidator
+      regex_pattern: ^https?://.*
+    /hippo:configuration/hippo:frontend/cms/cms-validators/website-blank-multi-string:
+      jcr:primaryType: frontend:plugin
+      plugin.class: uk.nhs.digital.common.BlankMultiStringFieldValidator

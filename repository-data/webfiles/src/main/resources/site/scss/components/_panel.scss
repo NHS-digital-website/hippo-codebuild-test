@@ -1,0 +1,51 @@
+.panel {
+    @include clearfix;
+
+    background-color: $col-duodenary;
+    display: table;
+    width: 100%;
+}
+
+.panel__header {
+    @include element-padding;
+
+    background-color: $col-senary;
+
+    & + * {
+        margin-top: 0;
+    }
+}
+
+.panel__content {
+    @include element-padding;
+}
+
+.panel__content--half {
+    border: solid $col-senary;
+    border-width: 4px 0 0;
+
+    @include media(desktop) {
+        border-width: 0 0 0 4px;
+        display: table-cell;
+        width: 50%;
+
+        @include ie-lte(7) {
+            border-width: 4px 0 0;
+            display: block;
+            width: auto;
+        }
+    }
+
+    + * {
+        margin-top: 0;
+    }
+}
+
+.panel__footer {
+    @include element-padding;
+    background-color: $col-senary;
+
+    * + & {
+        margin-top: 0;
+    }
+}

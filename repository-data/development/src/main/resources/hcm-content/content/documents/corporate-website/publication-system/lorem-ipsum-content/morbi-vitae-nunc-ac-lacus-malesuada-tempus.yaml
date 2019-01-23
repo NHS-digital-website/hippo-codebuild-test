@@ -1,0 +1,141 @@
+---
+/content/documents/corporate-website/publication-system/lorem-ipsum-content/morbi-vitae-nunc-ac-lacus-malesuada-tempus:
+  /morbi-vitae-nunc-ac-lacus-malesuada-tempus[1]:
+    common:FacetType: publication
+    common:FullTaxonomy:
+    - infectious-diseases
+    - workforce
+    - conditions
+    common:SearchableTags:
+    - Infectious diseases
+    - Workforce
+    common:orderedSearchDate: 1496275200000
+    common:searchRank: 4
+    common:searchable: true
+    hippo:availability: []
+    hippostd:state: draft
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModificationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippotaxonomy:keys:
+    - infectious-diseases
+    - workforce
+    hippotranslation:id: 00000000-0000-0000-0000-000000000000
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    jcr:primaryType: publicationsystem:publication
+    publicationsystem:AdministrativeSources: ''
+    publicationsystem:CoverageEnd: 2017-04-01T00:00:00Z
+    publicationsystem:CoverageStart: 2017-01-01T00:00:00Z
+    publicationsystem:InformationType:
+    - Official statistics
+    publicationsystem:KeyFacts: Donec ultricies fringilla mauris nec varius. Pellentesque
+      ultricies et libero et venenatis. Mauris accumsan ligula sed enim volutpat scelerisque.
+    publicationsystem:NominalDate: 2017-06-01T00:00:00Z
+    publicationsystem:PubliclyAccessible: true
+    publicationsystem:Summary: Etiam tempus quam sed massa ullamcorper, in vestibulum
+      ex ultrices. Duis ipsum, eros et accumsan auctor, turpis lectus viverra urna,
+      eu viverra neque sem at metus. Praesent lacinia erat facilisis, blandit elit
+      a, volutpat ipsum. Morbi egestas eleifend sem. Sed semper egestas purus, ac
+      tempor sem efficitur ac. Cras leo mauris, vestibulum eget turpis ut, bibendum
+      rhoncus neque. Aliquam erat volutpat. Aliquam erat volutpat. Nullam justo mi,
+      ipsum a ante nec, tincidunt eleifend tortor.
+    publicationsystem:Title: Morbi vitae nunc ac lacus malesuada tempus
+  /morbi-vitae-nunc-ac-lacus-malesuada-tempus[2]:
+    common:FacetType: publication
+    common:FullTaxonomy:
+    - infectious-diseases
+    - workforce
+    - conditions
+    common:SearchableTags:
+    - Infectious diseases
+    - Workforce
+    common:orderedSearchDate: 1496275200000
+    common:searchRank: 4
+    common:searchable: true
+    hippo:availability:
+    - preview
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModificationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippotaxonomy:keys:
+    - infectious-diseases
+    - workforce
+    hippotranslation:id: 00000000-0000-0000-0000-000000000000
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    - mix:versionable
+    jcr:primaryType: publicationsystem:publication
+    publicationsystem:AdministrativeSources: ''
+    publicationsystem:CoverageEnd: 2017-04-01T00:00:00Z
+    publicationsystem:CoverageStart: 2017-01-01T00:00:00Z
+    publicationsystem:InformationType:
+    - Official statistics
+    publicationsystem:KeyFacts: Donec ultricies fringilla mauris nec varius. Pellentesque
+      ultricies et libero et venenatis. Mauris accumsan ligula sed enim volutpat scelerisque.
+    publicationsystem:NominalDate: 2017-06-01T00:00:00Z
+    publicationsystem:PubliclyAccessible: true
+    publicationsystem:Summary: Etiam tempus quam sed massa ullamcorper, in vestibulum
+      ex ultrices. Duis ipsum, eros et accumsan auctor, turpis lectus viverra urna,
+      eu viverra neque sem at metus. Praesent lacinia erat facilisis, blandit elit
+      a, volutpat ipsum. Morbi egestas eleifend sem. Sed semper egestas purus, ac
+      tempor sem efficitur ac. Cras leo mauris, vestibulum eget turpis ut, bibendum
+      rhoncus neque. Aliquam erat volutpat. Aliquam erat volutpat. Nullam justo mi,
+      ipsum a ante nec, tincidunt eleifend tortor.
+    publicationsystem:Title: Morbi vitae nunc ac lacus malesuada tempus
+  /morbi-vitae-nunc-ac-lacus-malesuada-tempus[3]:
+    common:FacetType: publication
+    common:FullTaxonomy:
+    - infectious-diseases
+    - workforce
+    - conditions
+    common:SearchableTags:
+    - Infectious diseases
+    - Workforce
+    common:orderedSearchDate: 1496275200000
+    common:searchRank: 4
+    common:searchable: true
+    hippo:availability:
+    - live
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModificationDate: 2017-10-16T14:00:00Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2017-10-16T14:00:00Z
+    hippotaxonomy:keys:
+    - infectious-diseases
+    - workforce
+    hippotranslation:id: 00000000-0000-0000-0000-000000000000
+    hippotranslation:locale: en
+    jcr:mixinTypes:
+    - hippotaxonomy:classifiable
+    - mix:referenceable
+    jcr:primaryType: publicationsystem:publication
+    publicationsystem:AdministrativeSources: ''
+    publicationsystem:CoverageEnd: 2017-04-01T00:00:00Z
+    publicationsystem:CoverageStart: 2017-01-01T00:00:00Z
+    publicationsystem:InformationType:
+    - Official statistics
+    publicationsystem:KeyFacts: Donec ultricies fringilla mauris nec varius. Pellentesque
+      ultricies et libero et venenatis. Mauris accumsan ligula sed enim volutpat scelerisque.
+    publicationsystem:NominalDate: 2017-06-01T00:00:00Z
+    publicationsystem:PubliclyAccessible: true
+    publicationsystem:Summary: Etiam tempus quam sed massa ullamcorper, in vestibulum
+      ex ultrices. Duis ipsum, eros et accumsan auctor, turpis lectus viverra urna,
+      eu viverra neque sem at metus. Praesent lacinia erat facilisis, blandit elit
+      a, volutpat ipsum. Morbi egestas eleifend sem. Sed semper egestas purus, ac
+      tempor sem efficitur ac. Cras leo mauris, vestibulum eget turpis ut, bibendum
+      rhoncus neque. Aliquam erat volutpat. Aliquam erat volutpat. Nullam justo mi,
+      ipsum a ante nec, tincidunt eleifend tortor.
+    publicationsystem:Title: Morbi vitae nunc ac lacus malesuada tempus
+  jcr:mixinTypes:
+  - mix:referenceable
+  jcr:primaryType: hippo:handle

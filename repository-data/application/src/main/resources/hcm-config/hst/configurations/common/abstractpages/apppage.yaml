@@ -1,0 +1,21 @@
+---
+definitions:
+  config:
+    /hst:hst/hst:configurations/common/hst:abstractpages/apppage:
+      /breadcrumb:
+        hst:referencecomponent: hst:components/breadcrumb
+        jcr:primaryType: hst:component
+      /top-menu:
+        hst:componentclassname: org.onehippo.cms7.essentials.components.EssentialsMenuComponent
+        hst:parameternames:
+        - selectedMenu
+        - level
+        - menu
+        hst:parametervalues:
+        - 'on'
+        - '1'
+        - main
+        hst:template: base-top-menu
+        jcr:primaryType: hst:component
+      hst:template: app-layout
+      jcr:primaryType: hst:component

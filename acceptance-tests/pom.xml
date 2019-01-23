@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+>
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>uk.nhs.digital</groupId>
+        <artifactId>website</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <artifactId>website-acceptance-tests</artifactId>
+    <name>NHS Digital Website Acceptance Tests</name>
+    <description>Automated Acceptance Tests for NHS Digital Website</description>
+
+    <properties>
+        <cucumber.version>1.2.5</cucumber.version>
+        <spring.version>5.1.3.RELEASE</spring.version>
+        <selenium.version>3.141.59</selenium.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-spring</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>${selenium.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-library</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.awaitility</groupId>
+            <artifactId>awaitility</artifactId>
+            <version>3.1.5</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!--
+        Dependencies required in Cargo deployment.
+
+        The specific list follows content specified by shared-lib-component.xml and by common-lib-component.xml.
+        These XML files define what ends up in the distribution package (generated via 'mvn -P dist') under
+        shared/lib and common/lib, respectively.
+
+        The dependencies enumerated here are then referenced in 'container > dependencies' configuration of the
+        cargo-maven2-plugin below, to ensure that they are available to all deployed applications.
+        -->
+
+        <!-- Dependencies shared by all the applications, but not exposed to the server (shared-lib-component.xml,
+        shared/lib). -->
+
+        <dependency>
+            <groupId>org.onehippo.cms7</groupId>
+            <artifactId>hippo-cms7-commons</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.onehippo.cms7</groupId>
+            <artifactId>hippo-services</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.onehippo.cms7</groupId>
+            <artifactId>hippo-repository-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.onehippo.cms7</groupId>
+            <artifactId>hippo-repository-builtin</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.onehippo.cms</groupId>
+            <artifactId>hippo-configuration-management-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+        </dependency>
+
+        <!-- Dependencies shared by all the applications and the server (common-lib-component.xml, common/lib). -->
+        <dependency>
+            <groupId>javax.jcr</groupId>
+            <artifactId>jcr</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jta_1.1_spec</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!--
+            Disable Surefire plugin in acceptance tests module to prevent it from
+            attempting to execute acceptance tests as these should be run by Failsafe
+            plugin.
+            -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.1</version>
+                <configuration>
+                    <skipTests>true</skipTests>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>acceptance-test</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-failsafe-plugin</artifactId>
+                        <version>2.22.1</version>
+                        <configuration>
+                            <includes>
+                                <include>**/AcceptanceTest.java</include>
+                            </includes>
+                            <systemPropertyVariables>
+                                <buildDirectory>${project.build.directory}</buildDirectory>
+                            </systemPropertyVariables>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>acceptance-test</id>
+                                <goals>
+                                    <goal>integration-test</goal>
+                                    <goal>verify</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <!-- Automatically downloads and installs Chromederiver binaries within a temporary project
+                        space so that they don't have to be deployed manually. -->
+                        <groupId>com.github.webdriverextensions</groupId>
+                        <artifactId>webdriverextensions-maven-plugin</artifactId>
+                        <version>3.1.3</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>install-drivers</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <drivers>
+                                <driver>
+                                    <name>chromedriver</name>
+                                    <version>2.45</version>
+                                </driver>
+                            </drivers>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
+            <id>acceptance-test-hippo</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+
+            <build>
+                <plugins>
+
+                    <!-- Automatically downloads and installs Tomcat within a temporary project space and deploys the
+                    applications into it prior to running the tests. -->
+                    <plugin>
+                        <groupId>org.codehaus.cargo</groupId>
+                        <artifactId>cargo-maven2-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>acceptance-test-app-start</id>
+                                <phase>pre-integration-test</phase>
+                                <goals>
+                                    <goal>start</goal>
+                                </goals>
+                            </execution>
+                            <execution>
+                                <id>acceptance-test-app-stop</id>
+                                <phase>post-integration-test</phase>
+                                <goals>
+                                    <goal>stop</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <configuration>
+                                <configfiles>
+                                    <configfile>
+                                        <file>${website.basedir}/conf/context.xml</file>
+                                        <todir>conf/</todir>
+                                        <tofile>context.xml</tofile>
+                                    </configfile>
+                                    <configfile>
+                                        <file>${website.basedir}/conf/catalina-logging.properties</file>
+                                        <todir>conf/</todir>
+                                        <tofile>logging.properties</tofile>
+                                    </configfile>
+                                    <configfile>
+                                        <file>${website.basedir}/conf/query/lucene/indexing_configuration.xml</file>
+                                        <todir>conf/query/lucene</todir>
+                                        <tofile>indexing_configuration.xml</tofile>
+                                    </configfile>
+                                </configfiles>
+                                <files>
+                                    <file>
+                                        <file>${website.basedir}/repository-data/development/target/website-repository-data-development-${project.version}.jar</file>
+                                        <todir>${development-module-deploy-dir}</todir>
+                                    </file>
+                                    <file>
+                                        <file>${website.basedir}/repository-data/local/target/website-repository-data-local-${project.version}.jar</file>
+                                        <todir>${local-module-deploy-dir}</todir>
+                                    </file>
+                                    <file>
+                                        <file>${website.basedir}/s3connector/target/s3-connector-${project.version}.jar</file>
+                                        <todir>shared/lib</todir>
+                                    </file>
+                                </files>
+                            </configuration>
+                            <deployables>
+                                <deployable>
+                                    <type>war</type>
+                                    <properties>
+                                        <context>/cms</context>
+                                    </properties>
+                                    <location>${website.basedir}/cms/target/cms.war</location>
+                                </deployable>
+                                <deployable>
+                                    <type>war</type>
+                                    <properties>
+                                        <context>/</context>
+                                    </properties>
+                                    <location>${website.basedir}/site/target/ROOT.war</location>
+                                </deployable>
+                            </deployables>
+                            <container>
+                                <zipUrlInstaller>
+                                    <url>${tomcatDistributionUrl}</url>
+                                </zipUrlInstaller>
+                                <systemProperties>
+                                    <log4j.configurationFile>file://${website.basedir}/conf/log4j2-dev.xml</log4j.configurationFile>
+                                    <!-- enables auto export and web files watch: -->
+                                    <project.basedir>${website.basedir}/</project.basedir>
+                                    <send.usage.statistics.to.hippo>false</send.usage.statistics.to.hippo>
+                                    <repo.autoexport.allowed>false</repo.autoexport.allowed>
+                                    <repo.config>file://${website.basedir}/conf/repository.xml</repo.config>
+
+                                    <!-- Splunk forwarder config -->
+                                    <splunk.hec.name>${splunk.hec.name}</splunk.hec.name>
+                                    <splunk.token>${splunk.token}</splunk.token>
+                                    <splunk.url>${splunk.url}</splunk.url>
+                                    <splunk.batch.size.count>${splunk.batch.size.count}</splunk.batch.size.count>
+
+                                    <!-- AWS config -->
+                                    <externalstorage.aws.bucket>${externalstorage.aws.bucket}</externalstorage.aws.bucket>
+                                    <externalstorage.aws.region>${externalstorage.aws.region}</externalstorage.aws.region>
+                                    <externalstorage.aws.s3.endpoint>${externalstorage.aws.s3.endpoint}</externalstorage.aws.s3.endpoint>
+                                </systemProperties>
+                                <dependencies>
+                                    <!-- Dependencies shared by all deployed apps. Have to be declared in project's
+                                     dependencies first. -->
+
+                                    <!-- shared/lib - dependencies shared by the applications but not exposed to the
+                                    server -->
+                                    <dependency>
+                                        <groupId>org.onehippo.cms7</groupId>
+                                        <artifactId>hippo-cms7-commons</artifactId>
+                                        <classpath>shared</classpath>
+                                    </dependency>
+                                    <dependency>
+                                        <groupId>org.onehippo.cms7</groupId>
+                                        <artifactId>hippo-services</artifactId>
+                                        <classpath>shared</classpath>
+                                    </dependency>
+                                    <dependency>
+                                        <groupId>org.onehippo.cms7</groupId>
+                                        <artifactId>hippo-repository-api</artifactId>
+                                        <classpath>shared</classpath>
+                                    </dependency>
+                                    <dependency>
+                                        <groupId>org.onehippo.cms7</groupId>
+                                        <artifactId>hippo-repository-builtin</artifactId>
+                                        <classpath>shared</classpath>
+                                    </dependency>
+                                    <dependency>
+                                        <groupId>org.onehippo.cms</groupId>
+                                        <artifactId>hippo-configuration-management-api</artifactId>
+                                        <classpath>shared</classpath>
+                                    </dependency>
+                                    <dependency>
+                                        <groupId>org.slf4j</groupId>
+                                        <artifactId>slf4j-api</artifactId>
+                                        <classpath>shared</classpath>
+                                    </dependency>
+                                    <dependency>
+                                        <groupId>org.slf4j</groupId>
+                                        <artifactId>jcl-over-slf4j</artifactId>
+                                        <classpath>shared</classpath>
+                                    </dependency>
+                                    <dependency>
+                                        <groupId>org.apache.logging.log4j</groupId>
+                                        <artifactId>log4j-slf4j-impl</artifactId>
+                                        <classpath>shared</classpath>
+                                    </dependency>
+                                    <dependency>
+                                        <groupId>org.apache.logging.log4j</groupId>
+                                        <artifactId>log4j-api</artifactId>
+                                        <classpath>shared</classpath>
+                                    </dependency>
+                                    <dependency>
+                                        <groupId>org.apache.logging.log4j</groupId>
+                                        <artifactId>log4j-core</artifactId>
+                                        <classpath>shared</classpath>
+                                    </dependency>
+
+                                    <!-- common/lib - dependencies shared by all applictions and the server -->
+                                    <dependency>
+                                        <groupId>javax.jcr</groupId>
+                                        <artifactId>jcr</artifactId>
+                                    </dependency>
+                                    <dependency>
+                                        <groupId>org.apache.geronimo.specs</groupId>
+                                        <artifactId>geronimo-jta_1.1_spec</artifactId>
+                                    </dependency>
+                                    <dependency>
+                                        <groupId>javax.mail</groupId>
+                                        <artifactId>mail</artifactId>
+                                    </dependency>
+                                </dependencies>
+                            </container>
+                        </configuration>
+                    </plugin>
+
+                </plugins>
+
+            </build>
+        </profile>
+
+        <profile>
+            <!-- We want to run CMS tests without development data-->
+            <id>acceptance-without-development-data</id>
+            <properties>
+                <development-module-deploy-dir>temp</development-module-deploy-dir>
+            </properties>
+        </profile>
+    </profiles>
+
+</project>

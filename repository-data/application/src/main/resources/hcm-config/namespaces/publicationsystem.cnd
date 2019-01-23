@@ -1,0 +1,58 @@
+<'publicationsystem'='http://digital.nhs.uk/jcr/publicationsystem/nt/1.0'>
+<'hippo'='http://www.onehippo.org/jcr/hippo/nt/2.0.4'>
+<'hippostd'='http://www.onehippo.org/jcr/hippostd/nt/2.0'>
+<'hippostdpubwf'='http://www.onehippo.org/jcr/hippostdpubwf/nt/1.0'>
+<'common'='http://digital.nhs.uk/jcr/common/nt/1.0'>
+<'hippotranslation'='http://www.onehippo.org/jcr/hippotranslation/nt/1.0'>
+
+[publicationsystem:basedocument] > hippo:document, hippostd:publishableSummary, hippostdpubwf:document
+  orderable
+  - common:searchable (boolean) = 'true' autocreated
+
+[publicationsystem:archive] > hippostd:relaxed, hippotranslation:translated, publicationsystem:basedocument
+  orderable
+
+[publicationsystem:attachment] > hippo:compound, hippostd:relaxed
+  orderable
+
+[publicationsystem:chartSection] > hippo:compound, hippostd:relaxed, hippo:derived
+  orderable
+
+[publicationsystem:cilanding] > hippostd:relaxed, hippotranslation:translated, publicationsystem:basedocument
+  orderable
+
+[publicationsystem:cilandingasset] > hippo:compound, hippostd:relaxed
+  orderable
+
+[publicationsystem:dataset] > hippostd:relaxed, hippotranslation:translated, publicationsystem:basedocument
+  orderable
+
+[publicationsystem:extattachment] > hippo:compound, hippostd:relaxed
+  orderable
+
+[publicationsystem:imageSection] > hippo:compound, hippostd:relaxed
+  orderable
+
+[publicationsystem:legacypublication] > hippostd:relaxed, hippotranslation:translated, publicationsystem:basedocument
+  orderable
+
+[publicationsystem:mapSection] > hippo:compound, hippostd:relaxed
+  orderable
+
+[publicationsystem:publication] > hippostd:relaxed, hippotranslation:translated, publicationsystem:basedocument
+  orderable
+
+[publicationsystem:publicationPage] > hippostd:relaxed, hippotranslation:translated, publicationsystem:basedocument
+  orderable
+
+[publicationsystem:relatedlink] > hippo:compound, hippostd:relaxed
+  orderable
+
+[publicationsystem:resource] > hippo:derived, hippo:resource
+
+[publicationsystem:series] > hippostd:relaxed, hippotranslation:translated, publicationsystem:basedocument
+  orderable
+
+[publicationsystem:textSection] > hippo:compound, hippostd:relaxed
+  orderable
+

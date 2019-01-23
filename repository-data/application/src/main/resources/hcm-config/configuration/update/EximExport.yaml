@@ -1,0 +1,15 @@
+---
+definitions:
+  config:
+    /hippo:configuration/hippo:update/hippo:registry/EximExport:
+      hipposys:batchsize: 10
+      hipposys:description: ''
+      hipposys:dryrun: false
+      hipposys:parameters: "{\r\n  \"fileInJson\": true,\r\n  \"targetBaseFolderPath\"\
+        : \"file:${java.io.tmpdir}/exim-export/\"\r\n}"
+      hipposys:path: /
+      hipposys:script:
+        resource: /configuration/update/EximExport.groovy
+        type: string
+      hipposys:throttle: 1000
+      jcr:primaryType: hipposys:updaterinfo

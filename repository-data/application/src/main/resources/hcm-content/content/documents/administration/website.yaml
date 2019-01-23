@@ -1,0 +1,455 @@
+---
+/content/documents/administration/website:
+  .meta:order-before: publication-system
+  /gdpr:
+    /gdpr[1]:
+      hippo:availability: []
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2018-04-27T09:48:32.260Z
+      hippostdpubwf:lastModificationDate: 2018-04-27T12:47:52.496Z
+      hippostdpubwf:lastModifiedBy: admin
+      jcr:mixinTypes:
+      - mix:referenceable
+      jcr:primaryType: resourcebundle:resourcebundle
+      resourcebundle:descriptions:
+      - Label of 'Asset Reference Number'
+      - Label for 'Data controller'
+      - Label for 'How this information is used'
+      - Label for 'Who has access to this information'
+      - Label for 'Is this information transferred outside the UK'
+      - Label for 'How long is this information kept for?'
+      - Label for 'How do we collect this data?'
+      - Label for 'Your rights'
+      - Label for 'Withdrawing consent'
+      - Label for 'Decision by computers'
+      - Label for 'Legally, why can we use this information'
+      - Label for 'Is the information sensitive'
+      - Label for 'Where this data comes from'
+      - Label for 'Lawful basis'
+      - Title of the 'items section'
+      resourcebundle:id: website.gdpr
+      resourcebundle:keys:
+      - labels.asset-ref-number
+      - labels.data-controller
+      - labels.how-info-is-used
+      - labels.who-has-access
+      - labels.transferred-outside-uk
+      - labels.how-long-is-it-kept
+      - labels.how-long-we-collect
+      - labels.your-rights
+      - labels.withdrawing-consent
+      - labels.decision-by-computers
+      - labels.why-we-can-use-legally
+      - labels.sensitivity
+      - labels.data-source
+      - labels.lawful-basis
+      - labels.items-section-title
+      resourcebundle:messages:
+      - Asset Reference Number
+      - Data Controller
+      - How this information is used?
+      - Who has access to this information?
+      - Is this information transferred outside the UK?
+      - How long is this information kept for?
+      - How do we collect this data?
+      - Your rights regarding this data
+      - Withdrawing consent
+      - Decision by computers
+      - Legally, why can we use this information?
+      - Is the information sensitive?
+      - Where this data comes from
+      - Why do we collect this data?
+      - Related documents
+    /gdpr[2]:
+      hippo:availability:
+      - preview
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2018-04-27T09:48:32.260Z
+      hippostdpubwf:lastModificationDate: 2018-04-27T12:48:25.619Z
+      hippostdpubwf:lastModifiedBy: admin
+      jcr:mixinTypes:
+      - mix:referenceable
+      - mix:versionable
+      jcr:primaryType: resourcebundle:resourcebundle
+      resourcebundle:descriptions:
+      - Label of 'Asset Reference Number'
+      - Label for 'Data controller'
+      - Label for 'How this information is used'
+      - Label for 'Who has access to this information'
+      - Label for 'Is this information transferred outside the UK'
+      - Label for 'How long is this information kept for?'
+      - Label for 'How do we collect this data?'
+      - Label for 'Your rights'
+      - Label for 'Withdrawing consent'
+      - Label for 'Decision by computers'
+      - Label for 'Legally, why can we use this information'
+      - Label for 'Is the information sensitive'
+      - Label for 'Where this data comes from'
+      - Label for 'Lawful basis'
+      - Title of the 'items section'
+      resourcebundle:id: website.gdpr
+      resourcebundle:keys:
+      - labels.asset-ref-number
+      - labels.data-controller
+      - labels.how-info-is-used
+      - labels.who-has-access
+      - labels.transferred-outside-uk
+      - labels.how-long-is-it-kept
+      - labels.how-long-we-collect
+      - labels.your-rights
+      - labels.withdrawing-consent
+      - labels.decision-by-computers
+      - labels.why-we-can-use-legally
+      - labels.sensitivity
+      - labels.data-source
+      - labels.lawful-basis
+      - labels.items-section-title
+      resourcebundle:messages:
+      - Asset Reference Number
+      - Data Controller
+      - How this information is used?
+      - Who has access to this information?
+      - Is this information transferred outside the UK?
+      - How long is this information kept for?
+      - How do we collect this data?
+      - Your rights regarding this data
+      - Withdrawing consent
+      - Decision by computers
+      - Legally, why can we use this information?
+      - Is the information sensitive?
+      - Where this data comes from
+      - Why do we collect this data?
+      - Related documents
+    /gdpr[3]:
+      hippo:availability:
+      - live
+      hippostd:state: published
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2018-04-27T09:48:32.260Z
+      hippostdpubwf:lastModificationDate: 2018-04-27T12:48:25.619Z
+      hippostdpubwf:lastModifiedBy: admin
+      hippostdpubwf:publicationDate: 2018-04-27T12:48:26.931Z
+      jcr:mixinTypes:
+      - mix:referenceable
+      jcr:primaryType: resourcebundle:resourcebundle
+      resourcebundle:descriptions:
+      - Label of 'Asset Reference Number'
+      - Label for 'Data controller'
+      - Label for 'How this information is used'
+      - Label for 'Who has access to this information'
+      - Label for 'Is this information transferred outside the UK'
+      - Label for 'How long is this information kept for?'
+      - Label for 'How do we collect this data?'
+      - Label for 'Your rights'
+      - Label for 'Withdrawing consent'
+      - Label for 'Decision by computers'
+      - Label for 'Legally, why can we use this information'
+      - Label for 'Is the information sensitive'
+      - Label for 'Where this data comes from'
+      - Label for 'Lawful basis'
+      - Title of the 'items section'
+      resourcebundle:id: website.gdpr
+      resourcebundle:keys:
+      - labels.asset-ref-number
+      - labels.data-controller
+      - labels.how-info-is-used
+      - labels.who-has-access
+      - labels.transferred-outside-uk
+      - labels.how-long-is-it-kept
+      - labels.how-long-we-collect
+      - labels.your-rights
+      - labels.withdrawing-consent
+      - labels.decision-by-computers
+      - labels.why-we-can-use-legally
+      - labels.sensitivity
+      - labels.data-source
+      - labels.lawful-basis
+      - labels.items-section-title
+      resourcebundle:messages:
+      - Asset Reference Number
+      - Data Controller
+      - How this information is used?
+      - Who has access to this information?
+      - Is this information transferred outside the UK?
+      - How long is this information kept for?
+      - How do we collect this data?
+      - Your rights regarding this data
+      - Withdrawing consent
+      - Decision by computers
+      - Legally, why can we use this information?
+      - Is the information sensitive?
+      - Where this data comes from
+      - Why do we collect this data?
+      - Related documents
+    hippo:name: GDPR
+    jcr:mixinTypes:
+    - hippo:named
+    - mix:referenceable
+    jcr:primaryType: hippo:handle
+  /homepage-labels:
+    /homepage-labels[1]:
+      hippo:availability: []
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2018-02-02T13:13:41.756Z
+      hippostdpubwf:lastModificationDate: 2018-04-30T11:45:51.842Z
+      hippostdpubwf:lastModifiedBy: admin
+      jcr:mixinTypes:
+      - mix:referenceable
+      jcr:primaryType: resourcebundle:resourcebundle
+      resourcebundle:descriptions:
+      - Text for the search banner
+      - Title attribute of the search input field
+      - Placeholder text for the search input field
+      - ''
+      - ''
+      - ''
+      - Label of the search button
+      - ''
+      - Home page - Data and information section title
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - Prefix of the news item date label
+      - Latest Events button label
+      - Title of the latest events section
+      - Prefix of the event date
+      resourcebundle:id: homepage.website.labels
+      resourcebundle:keys:
+      - search-banner.text
+      - search-banner.title
+      - search-banner.placeholder
+      - systems-and-services.title
+      - systems-and-services.text
+      - systems-and-services.subTitle
+      - search-banner.buttonLabel
+      - systems-and-services.buttonLabel
+      - data-and-information.title
+      - about-us.latestNewsTitle
+      - about-us.title
+      - about-us.latestNewsButtonLabel
+      - about-us.text
+      - about-us.upcomingEventsTitle
+      - about-us.upcomingEventsButtonLabel
+      - about-us.newsDateLabel
+      - about-us.latestEventsButtonLabel
+      - about-us.latestEventsTitle
+      - about-us.eventDateLabel
+      resourcebundle:messages:
+        type: string
+        value:
+        - NHS Digital provides technology, information and services, which help the
+          NHS deliver better care
+        - Search for content on the website
+        - What are you looking for today?
+        - Systems and services
+        - !!binary |-
+          V2UgYXJlIHRoZSBuYXRpb25hbCBwcm92aWRlciBvZiBpbmZvcm1hdGlvbiwgZGF0YSBhbmQgSVQgc3lzdGVtcyADZm9yIGNvbW1pc3Npb25lcnMsIGFuYWx5c3RzIGFuZCBjbGluaWNpYW5zIGluIGhlYWx0aCBhbmQgc29jaWFsIGNhcmUuICAgICBXZSB3b3JrIHdpdGggcGFydG5lcnMgYWNyb3NzIHRoZSBoZWFsdGggYW5kIHNvY2lhbCBjYXJlIHN5c3RlbSB0byBlbnN1cmUgaW5mb3JtYXRpb24gZmxvd3MgZWZmaWNpZW50bHkgYW5kIHNlY3VyZWx5Lg==
+        - Most popular services
+        - Search
+        - View all services
+        - Data and information
+        - Latest news
+        - About us
+        - View all news
+        - We're the national information and technology partner to the health and
+          social care system. We're using digital technology to transform the NHS
+          and social care.
+        - Upcoming events
+        - View all events
+        - Date published
+        - View all events
+        - Upcoming events
+        - Date
+    /homepage-labels[2]:
+      hippo:availability:
+      - preview
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2018-02-02T13:13:41.756Z
+      hippostdpubwf:lastModificationDate: 2018-04-30T11:46:11.598Z
+      hippostdpubwf:lastModifiedBy: admin
+      jcr:mixinTypes:
+      - mix:referenceable
+      - mix:versionable
+      jcr:primaryType: resourcebundle:resourcebundle
+      resourcebundle:descriptions:
+      - Text for the search banner
+      - Title attribute of the search input field
+      - Placeholder text for the search input field
+      - ''
+      - ''
+      - ''
+      - Label of the search button
+      - ''
+      - Home page - Data and information section title
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - Prefix of the news item date label
+      - Latest Events button label
+      - Title of the latest events section
+      - Prefix of the event date
+      resourcebundle:id: homepage.website.labels
+      resourcebundle:keys:
+      - search-banner.text
+      - search-banner.title
+      - search-banner.placeholder
+      - systems-and-services.title
+      - systems-and-services.text
+      - systems-and-services.subTitle
+      - search-banner.buttonLabel
+      - systems-and-services.buttonLabel
+      - data-and-information.title
+      - about-us.latestNewsTitle
+      - about-us.title
+      - about-us.latestNewsButtonLabel
+      - about-us.text
+      - about-us.upcomingEventsTitle
+      - about-us.upcomingEventsButtonLabel
+      - about-us.newsDateLabel
+      - about-us.latestEventsButtonLabel
+      - about-us.latestEventsTitle
+      - about-us.eventDateLabel
+      resourcebundle:messages:
+        type: string
+        value:
+        - NHS Digital provides technology, information and services, which help the
+          NHS deliver better care
+        - Search for content on the website
+        - What are you looking for today?
+        - Systems and services
+        - !!binary |-
+          V2UgYXJlIHRoZSBuYXRpb25hbCBwcm92aWRlciBvZiBpbmZvcm1hdGlvbiwgZGF0YSBhbmQgSVQgc3lzdGVtcyADZm9yIGNvbW1pc3Npb25lcnMsIGFuYWx5c3RzIGFuZCBjbGluaWNpYW5zIGluIGhlYWx0aCBhbmQgc29jaWFsIGNhcmUuICAgICBXZSB3b3JrIHdpdGggcGFydG5lcnMgYWNyb3NzIHRoZSBoZWFsdGggYW5kIHNvY2lhbCBjYXJlIHN5c3RlbSB0byBlbnN1cmUgaW5mb3JtYXRpb24gZmxvd3MgZWZmaWNpZW50bHkgYW5kIHNlY3VyZWx5Lg==
+        - Most popular services
+        - Search
+        - View all services
+        - Data and information
+        - Latest news
+        - About us
+        - View all news
+        - We're the national information and technology partner to the health and
+          social care system. We're using digital technology to transform the NHS
+          and social care.
+        - Upcoming events
+        - View all events
+        - Date published
+        - View all events
+        - Upcoming events
+        - Date
+    /homepage-labels[3]:
+      hippo:availability:
+      - live
+      hippostd:state: published
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2018-02-02T13:13:41.756Z
+      hippostdpubwf:lastModificationDate: 2018-04-30T11:46:11.598Z
+      hippostdpubwf:lastModifiedBy: admin
+      hippostdpubwf:publicationDate: 2018-04-30T11:46:12.713Z
+      jcr:mixinTypes:
+      - mix:referenceable
+      jcr:primaryType: resourcebundle:resourcebundle
+      resourcebundle:descriptions:
+      - Text for the search banner
+      - Title attribute of the search input field
+      - Placeholder text for the search input field
+      - ''
+      - ''
+      - ''
+      - Label of the search button
+      - ''
+      - Home page - Data and information section title
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - Prefix of the news item date label
+      - Latest Events button label
+      - Title of the latest events section
+      - Prefix of the event date
+      resourcebundle:id: homepage.website.labels
+      resourcebundle:keys:
+      - search-banner.text
+      - search-banner.title
+      - search-banner.placeholder
+      - systems-and-services.title
+      - systems-and-services.text
+      - systems-and-services.subTitle
+      - search-banner.buttonLabel
+      - systems-and-services.buttonLabel
+      - data-and-information.title
+      - about-us.latestNewsTitle
+      - about-us.title
+      - about-us.latestNewsButtonLabel
+      - about-us.text
+      - about-us.upcomingEventsTitle
+      - about-us.upcomingEventsButtonLabel
+      - about-us.newsDateLabel
+      - about-us.latestEventsButtonLabel
+      - about-us.latestEventsTitle
+      - about-us.eventDateLabel
+      resourcebundle:messages:
+        type: string
+        value:
+        - NHS Digital provides technology, information and services, which help the
+          NHS deliver better care
+        - Search for content on the website
+        - What are you looking for today?
+        - Systems and services
+        - !!binary |-
+          V2UgYXJlIHRoZSBuYXRpb25hbCBwcm92aWRlciBvZiBpbmZvcm1hdGlvbiwgZGF0YSBhbmQgSVQgc3lzdGVtcyADZm9yIGNvbW1pc3Npb25lcnMsIGFuYWx5c3RzIGFuZCBjbGluaWNpYW5zIGluIGhlYWx0aCBhbmQgc29jaWFsIGNhcmUuICAgICBXZSB3b3JrIHdpdGggcGFydG5lcnMgYWNyb3NzIHRoZSBoZWFsdGggYW5kIHNvY2lhbCBjYXJlIHN5c3RlbSB0byBlbnN1cmUgaW5mb3JtYXRpb24gZmxvd3MgZWZmaWNpZW50bHkgYW5kIHNlY3VyZWx5Lg==
+        - Most popular services
+        - Search
+        - View all services
+        - Data and information
+        - Latest news
+        - About us
+        - View all news
+        - We're the national information and technology partner to the health and
+          social care system. We're using digital technology to transform the NHS
+          and social care.
+        - Upcoming events
+        - View all events
+        - Date published
+        - View all events
+        - Upcoming events
+        - Date
+    hippo:name: Home Page Labels
+    jcr:mixinTypes:
+    - hippo:named
+    - mix:referenceable
+    jcr:primaryType: hippo:handle
+  /section-type:
+    /section-type:
+      hippo:availability:
+      - live
+      - preview
+      hippotranslation:id: f2715ce4-d700-484c-b88f-574559bdc613
+      hippotranslation:locale: inherited - from query
+      jcr:mixinTypes:
+      - hippotranslation:translated
+      - mix:referenceable
+      jcr:primaryType: selection:valuelist
+    hippo:name: Section Type
+    jcr:mixinTypes:
+    - hippo:named
+    - mix:referenceable
+    jcr:primaryType: hippo:handle
+  hippo:name: Website
+  hippostd:foldertype:
+  - new-document
+  - new-folder
+  jcr:mixinTypes:
+  - hippo:named
+  - mix:versionable
+  jcr:primaryType: hippostd:folder

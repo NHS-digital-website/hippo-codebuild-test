@@ -1,0 +1,374 @@
+---
+/content/documents/administration/national-indicator-library/headers:
+  /headers[1]:
+    hippo:availability: []
+    hippostd:state: draft
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2018-02-08T11:24:07.560Z
+    hippostdpubwf:lastModificationDate: 2018-03-20T12:44:28.396Z
+    hippostdpubwf:lastModifiedBy: admin
+    jcr:mixinTypes:
+    - mix:referenceable
+    jcr:primaryType: resourcebundle:resourcebundle
+    resourcebundle:descriptions:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    resourcebundle:id: nationalindicatorlibrary.headers
+    resourcebundle:keys:
+    - headers.assuranceDate
+    - headers.basedOn
+    - headers.caveats
+    - headers.contactAuthor
+    - headers.geographicCoverage
+    - headers.definition
+    - headers.iapCode
+    - headers.indicatorSet
+    - headers.interpretationGuidelines
+    - headers.qualityStatement
+    - headers.technicalSpecification
+    - headers.adviceForm
+    - headers.addForm
+    - headers.applyForm
+    - headers.applyGuidanceForm
+    - headers.categories
+    - headers.resources
+    - headers.methodology
+    - headers.publishedBy
+    - headers.purpose
+    - headers.rating
+    - headers.reportingLevel
+    - headers.reportingPeriod
+    - headers.reviewDate
+    - headers.dataSource
+    - headers.numerator
+    - headers.denominator
+    - headers.calculation
+    - headers.popularTopics
+    - headers.topicsAZ
+    - headers.indicatorsAndAssurance
+    - headers.assured
+    - headers.unassured
+    - headers.igbAssurance
+    - headers.hereToHelp
+    - headers.findOutMore
+    resourcebundle:messages:
+    - Assurance Date
+    - Based on data from
+    - Caveats
+    - Contact Author
+    - Geographic Coverage
+    - Definition
+    - IAP Code
+    - Indicator Set
+    - Interpretation Guidelines
+    - Quality Statement
+    - Technical Specification
+    - Advice form
+    - Summary form
+    - Application form
+    - Application guidance
+    - Categories
+    - Resources
+    - Methodology
+    - Published by
+    - Purpose
+    - Rating
+    - Reporting level
+    - Reporting period
+    - Review date
+    - Data Source
+    - Numerator
+    - Denominator
+    - Calculation
+    - Popular indicator topics
+    - Indicator topics A-Z
+    - Getting Assured
+    - Assured
+    - Date
+    - Indicator Governance Board (IGB) Assurance
+    - We are here to help
+    - Find out more about these services
+  /headers[2]:
+    hippo:availability:
+    - preview
+    hippostd:state: unpublished
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2018-02-08T11:24:07.560Z
+    hippostdpubwf:lastModificationDate: 2018-03-20T12:44:43.438Z
+    hippostdpubwf:lastModifiedBy: admin
+    jcr:mixinTypes:
+    - mix:referenceable
+    - mix:versionable
+    jcr:primaryType: resourcebundle:resourcebundle
+    resourcebundle:descriptions:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    resourcebundle:id: nationalindicatorlibrary.headers
+    resourcebundle:keys:
+    - headers.assuranceDate
+    - headers.basedOn
+    - headers.caveats
+    - headers.contactAuthor
+    - headers.geographicCoverage
+    - headers.definition
+    - headers.iapCode
+    - headers.indicatorSet
+    - headers.interpretationGuidelines
+    - headers.qualityStatement
+    - headers.technicalSpecification
+    - headers.adviceForm
+    - headers.addForm
+    - headers.applyForm
+    - headers.applyGuidanceForm
+    - headers.categories
+    - headers.resources
+    - headers.methodology
+    - headers.publishedBy
+    - headers.purpose
+    - headers.rating
+    - headers.reportingLevel
+    - headers.reportingPeriod
+    - headers.reviewDate
+    - headers.dataSource
+    - headers.numerator
+    - headers.denominator
+    - headers.calculation
+    - headers.popularTopics
+    - headers.topicsAZ
+    - headers.indicatorsAndAssurance
+    - headers.assured
+    - headers.unassured
+    - headers.igbAssurance
+    - headers.hereToHelp
+    - headers.findOutMore
+    resourcebundle:messages:
+    - Assurance Date
+    - Based on data from
+    - Caveats
+    - Contact Author
+    - Geographic Coverage
+    - Definition
+    - IAP Code
+    - Indicator Set
+    - Interpretation Guidelines
+    - Quality Statement
+    - Technical Specification
+    - Advice form
+    - Summary form
+    - Application form
+    - Application guidance
+    - Categories
+    - Resources
+    - Methodology
+    - Published by
+    - Purpose
+    - Rating
+    - Reporting level
+    - Reporting period
+    - Review date
+    - Data Source
+    - Numerator
+    - Denominator
+    - Calculation
+    - Popular indicator topics
+    - Indicator topics A-Z
+    - Getting Assured
+    - Assured
+    - Date
+    - Indicator Governance Board (IGB) Assurance
+    - We are here to help
+    - Find out more about these services
+  /headers[3]:
+    hippo:availability:
+    - live
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2018-02-08T11:24:07.560Z
+    hippostdpubwf:lastModificationDate: 2018-03-20T12:44:43.438Z
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2018-03-20T12:44:44.676Z
+    jcr:mixinTypes:
+    - mix:referenceable
+    jcr:primaryType: resourcebundle:resourcebundle
+    resourcebundle:descriptions:
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    resourcebundle:id: nationalindicatorlibrary.headers
+    resourcebundle:keys:
+    - headers.assuranceDate
+    - headers.basedOn
+    - headers.caveats
+    - headers.contactAuthor
+    - headers.geographicCoverage
+    - headers.definition
+    - headers.iapCode
+    - headers.indicatorSet
+    - headers.interpretationGuidelines
+    - headers.qualityStatement
+    - headers.technicalSpecification
+    - headers.adviceForm
+    - headers.addForm
+    - headers.applyForm
+    - headers.applyGuidanceForm
+    - headers.categories
+    - headers.resources
+    - headers.methodology
+    - headers.publishedBy
+    - headers.purpose
+    - headers.rating
+    - headers.reportingLevel
+    - headers.reportingPeriod
+    - headers.reviewDate
+    - headers.dataSource
+    - headers.numerator
+    - headers.denominator
+    - headers.calculation
+    - headers.popularTopics
+    - headers.topicsAZ
+    - headers.indicatorsAndAssurance
+    - headers.assured
+    - headers.unassured
+    - headers.igbAssurance
+    - headers.hereToHelp
+    - headers.findOutMore
+    resourcebundle:messages:
+    - Assurance Date
+    - Based on data from
+    - Caveats
+    - Contact Author
+    - Geographic Coverage
+    - Definition
+    - IAP Code
+    - Indicator Set
+    - Interpretation Guidelines
+    - Quality Statement
+    - Technical Specification
+    - Advice form
+    - Summary form
+    - Application form
+    - Application guidance
+    - Categories
+    - Resources
+    - Methodology
+    - Published by
+    - Purpose
+    - Rating
+    - Reporting level
+    - Reporting period
+    - Review date
+    - Data Source
+    - Numerator
+    - Denominator
+    - Calculation
+    - Popular indicator topics
+    - Indicator topics A-Z
+    - Getting Assured
+    - Assured
+    - Date
+    - Indicator Governance Board (IGB) Assurance
+    - We are here to help
+    - Find out more about these services
+  hippo:name: Headers
+  jcr:mixinTypes:
+  - hippo:named
+  - mix:referenceable
+  jcr:primaryType: hippo:handle
