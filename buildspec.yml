@@ -61,7 +61,7 @@ phases:
       #- ssh-agent bash -c "
       #  ssh-add $HOME/.ssh/nhs-ci_rsa &&
       #  cd ci-cd && make ondemand.upload"
-      - . brc.credentials && cd ci-cd && make brc.upload
+      - . $HOME/brc.credentials && cd ci-cd && make brc.upload
       # Deploy to DEV Environment
       #- . $HOME/rd.password && cd ci-cd && make ondemand.deploy
 
