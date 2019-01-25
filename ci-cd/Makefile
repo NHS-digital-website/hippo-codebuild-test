@@ -11,7 +11,9 @@ TRAVIS_EVENT_TYPE ?=
 VENV ?= $(PWD)/.venv
 VERSION ?= $(shell git describe --tags --match "$(VERSION_BASE)*" || echo $(VERSION_BASE).0)
 VERSION_BASE ?= $(shell cat "$(PWD)/../.version")
-SLACK_HOOK_URL ?=
+BRC_ACCESS_TOKEN ?= $(shell curl -s -H "Content-type: application/json;" -X POST "$(BRC_URL)/v3/authn/access_token" \
+		-d '{"username":"$(BRC_USERNAME)","password":"$(BRC_PASSWORD)"}' | \
+		python -c 'import json,sys;obj=json.load(sys.stdin);print obj["'access_token'"]';)
 
 PATH := $(VENV)/bin:$(PWD)/bin:$(PWD)/vendor:$(shell printenv PATH)
 SHELL := env PATH=$(PATH) /bin/bash
@@ -128,9 +130,10 @@ ondemand.upload:
 		| sftp nhs@static.hosting.onehippo.com
 
 ## Upload distribution file to BloomReach Cloud server
-brc.upload: brc.login
-	curl --http1.1 -fsSL -X POST -H "Content-Type: multipart/form-data" -H "Authorization: Bearer $(ACCESS_TOKEN)" \
-			-F dist_file="../target/website-$(VERSION)-on-demand-distribution.tar.gz" "$(BRC_URL)/v3/distributions"
+brc.upload:
+	curl --http1.1 -fsSL -X POST "$(BRC_URL)/v3/distributions" -H "Content-Type: multipart/form-data" \
+			-H "Authorization: Bearer $(BRC_ACCESS_TOKEN)" \
+			-F dist_file="target/website-$(VERSION)-on-demand-distribution.tar.gz"
 
 
 ## Deploy to OnDemand environment
@@ -226,10 +229,7 @@ vendor:
 	mkdir -p vendor
 
 brc.login:
-	export ACCESS_TOKEN=$(shell \
-	curl -s -H "Content-type: application/json;" -X POST "$(BRC_URL)/v3/authn/access_token" \
-		-d '{"username":"$(BRC_USERNAME)","password":"$(BRC_PASSWORD)"}' | \
-		python -c 'import json,sys;obj=json.load(sys.stdin);print obj["'access_token'"]';)
+
 
 # get python virtualenv
 $(VENV):
