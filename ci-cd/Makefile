@@ -127,6 +127,12 @@ ondemand.upload:
 	echo "put ../target/website-$(VERSION)-on-demand-distribution.tar.gz /uploads/dists/$(VERSION).tar.gz" \
 		| sftp nhs@static.hosting.onehippo.com
 
+## Upload distribution file to BloomReach Cloud server
+brc.upload: brc.login
+	curl --http1.1 -fsSL -X POST -H "Content-Type: multipart/form-data" -H "Authorization: Bearer $(ACCESS_TOKEN)" \
+			-F dist_file=@"/uploads/dists/$(VERSION).tar.gz" "$(BRC_URL)/v3/distributions"
+
+
 ## Deploy to OnDemand environment
 # Usage: make ondemand.deploy ENV=tst RD_CONF=my-rd.conf
 #        make ondemand.deploy ENV=uat RD_CONF=my-rd.conf
@@ -218,6 +224,12 @@ vendor/rd: vendor
 
 vendor:
 	mkdir -p vendor
+
+brc.login:
+	export ACCESS_TOKEN=$(shell \
+	curl -s -H "Content-type: application/json;" -X POST "$(BRC_URL)/v3/authn/access_token" \
+		-d '{"username":"$(BRC_USERNAME)","password":"$(BRC_PASSWORD)"}' | \
+		python -c 'import json,sys;obj=json.load(sys.stdin);print obj["'access_token'"]';)
 
 # get python virtualenv
 $(VENV):
