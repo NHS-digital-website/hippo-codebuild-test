@@ -131,9 +131,10 @@ ondemand.upload:
 
 ## Upload distribution file to BloomReach Cloud server
 brc.upload:
+	export dist_file=target/website-$(VERSION)-on-demand-distribution.tar.gz
 	curl --http1.1 -fsSL -X POST "$(BRC_URL)/v3/distributions" -H "Content-Type: multipart/form-data" \
 			-H "Authorization: Bearer $(BRC_ACCESS_TOKEN)" \
-			-F dist_file="target/website-$(VERSION)-on-demand-distribution.tar.gz"
+			-F dist_file=@"$dist-file"
 
 
 ## Deploy to OnDemand environment
