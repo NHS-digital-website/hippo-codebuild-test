@@ -36,7 +36,7 @@ phases:
       - aws s3 cp s3://config.mgt.nhsd.io/codebuild/hippo_build/rd.password $HOME/rd.password
 
       # BRC credentials
-      - aws s3 cp s3://config.mgt.nhsd.io/codebuild/hippo_build/brc.username $HOME/brc.credentials
+      - aws s3 cp s3://config.mgt.nhsd.io/codebuild/hippo_build/brc.credentials $HOME/brc.credentials
 
       # Add static.hosting.onehippo.com and github.com, and BloomReach Cloud as known host
       - touch $HOME/.ssh/known_hosts
@@ -61,10 +61,7 @@ phases:
       #- ssh-agent bash -c "
       #  ssh-add $HOME/.ssh/nhs-ci_rsa &&
       #  cd ci-cd && make ondemand.upload"
-      - . $HOME/brc.host
-      - . $HOME/brc.username
-      - . $HOME/brc.password
-      - cd ci-cd && make brc.upload
+      - . $HOME/brc.credentials && cd ci-cd && make brc.upload
       # Deploy to DEV Environment
       #- . $HOME/rd.password && cd ci-cd && make ondemand.deploy
 
