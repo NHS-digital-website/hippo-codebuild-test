@@ -130,12 +130,14 @@ ondemand.upload:
 		| sftp nhs@static.hosting.onehippo.com
 
 ## Upload distribution file to BloomReach Cloud server
-brc.upload:
-	export dist_file="../target/website-$(VERSION)-on-demand-distribution.tar.gz"
+brc.upload: brc.distfile
 	curl --http1.1 -fsSL -X POST "$(BRC_URL)/v3/distributions" -H "Content-Type: multipart/form-data" \
 			-H "Authorization: Bearer $(BRC_ACCESS_TOKEN)" \
 			-F dist_file=@"$(dist_file)"
 
+brc.distfile:
+	export dist_file="../target/website-$(VERSION)-on-demand-distribution.tar.gz"
+	export
 
 ## Deploy to OnDemand environment
 # Usage: make ondemand.deploy ENV=tst RD_CONF=my-rd.conf
