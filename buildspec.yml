@@ -50,9 +50,9 @@ phases:
   build:
     commands:
       # Tag
-      - ssh-agent bash -c "
-        ssh-add $HOME/.ssh/nhs-ci_rsa && cd ci-cd &&
-        make version.bumpup"
+#      - ssh-agent bash -c "
+#        ssh-add $HOME/.ssh/nhs-ci_rsa && cd ci-cd &&
+#        make version.bumpup"
       # Build
       - cd ci-cd && make clean build
       # Set git commit status
