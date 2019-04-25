@@ -28,24 +28,24 @@ phases:
       - rm -rf /var/cache/oracle-jdk8-installer
 
       # SSH key
-      - aws s3 cp s3://config.mgt.nhsd.io/codebuild/hippo_build/nhs-ci_rsa $HOME/.ssh/nhs-ci_rsa
-      - aws s3 cp s3://config.mgt.nhsd.io/codebuild/hippo_build/nhs-ci_rsa.pub $HOME/.ssh/nhs-ci_rsa.pub
-      - chmod 600 $HOME/.ssh/nhs-ci_rsa
+      # - aws s3 cp s3://config.mgt.nhsd.io/codebuild/hippo_build/nhs-ci_rsa $HOME/.ssh/nhs-ci_rsa
+      # - aws s3 cp s3://config.mgt.nhsd.io/codebuild/hippo_build/nhs-ci_rsa.pub $HOME/.ssh/nhs-ci_rsa.pub
+      # - chmod 600 $HOME/.ssh/nhs-ci_rsa
 
       # Rundeck credentials
-      - aws s3 cp s3://config.mgt.nhsd.io/codebuild/hippo_build/rd.password $HOME/rd.password
+      # - aws s3 cp s3://config.mgt.nhsd.io/codebuild/hippo_build/rd.password $HOME/rd.password
 
       # BRC credentials
-      - aws s3 cp s3://config.mgt.nhsd.io/codebuild/hippo_build/brc.credentials $HOME/brc.credentials
+      # - aws s3 cp s3://config.mgt.nhsd.io/codebuild/hippo_build/brc.credentials $HOME/brc.credentials
 
       # Add static.hosting.onehippo.com and github.com, and BloomReach Cloud as known host
-      - touch $HOME/.ssh/known_hosts
-      - ssh-keygen -R static.hosting.onehippo.com
-      - ssh-keyscan static.hosting.onehippo.com >> $HOME/.ssh/known_hosts
-      - ssh-keygen -R github.com
-      - ssh-keyscan github.com >> $HOME/.ssh/known_hosts
-      - ssh-keygen -R missioncontrol-nhsdigitaltrail.onehippo.io
-      - ssh-keyscan missioncontrol-nhsdigitaltrail.onehippo.io >> $HOME/.ssh/known_hosts
+      # - touch $HOME/.ssh/known_hosts
+      # - ssh-keygen -R static.hosting.onehippo.com
+      # - ssh-keyscan static.hosting.onehippo.com >> $HOME/.ssh/known_hosts
+      # - ssh-keygen -R github.com
+      # - ssh-keyscan github.com >> $HOME/.ssh/known_hosts
+      # - ssh-keygen -R missioncontrol-nhsdigitaltrail.onehippo.io
+      # - ssh-keyscan missioncontrol-nhsdigitaltrail.onehippo.io >> $HOME/.ssh/known_hosts
 
   build:
     commands:
@@ -61,7 +61,7 @@ phases:
       #- ssh-agent bash -c "
       #  ssh-add $HOME/.ssh/nhs-ci_rsa &&
       #  cd ci-cd && make ondemand.upload"
-      - . $HOME/brc.credentials && cd ci-cd && make brc.upload
+#       - . $HOME/brc.credentials && cd ci-cd && make brc.upload
       # Deploy to DEV Environment
       #- . $HOME/rd.password && cd ci-cd && make ondemand.deploy
 
