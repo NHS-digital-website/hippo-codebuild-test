@@ -18,7 +18,7 @@ phases:
       - apt-get install -y openjdk-8-jdk
       - apt-get install -y maven
       - java -version
-      - echo $JAVA_HOME
+      - update-alternatives --config java
       # - rm -rf /var/lib/apt/lists/*
 
       # SSH key
