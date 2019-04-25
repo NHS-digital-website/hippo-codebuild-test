@@ -8,9 +8,9 @@ version: 0.1
 phases:
   install:
     commands:
-      - apt-get update
-      - apt-get install -qqy software-properties-common python-software-properties
-      - apt-get install -qqy build-essential git awscli curl python-pip python-dev
+      - apt update
+      - apt install -qqy software-properties-common python-software-properties
+      - apt install -qqy build-essential git awscli curl python-pip python-dev
       - pip install virtualenv
 
       # remove oracle java
@@ -18,9 +18,9 @@ phases:
       - rm -r /usr/lib/jvm/java-8-oracle
 
       # Java 8 install
-      - apt-get update
-      - apt-get install -y openjdk-8-jdk
-      - apt-get install -y maven
+      - apt update
+      - apt install -y openjdk-8-jdk
+      - apt install -y maven
 
       - update-alternatives --config java
       - java -version
