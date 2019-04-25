@@ -13,9 +13,8 @@ phases:
       - apt-get install -qqy build-essential git awscli curl python-pip python-dev
       - pip install virtualenv
 
-      # remove java oracle
+      # remove oracle java
       - update-alternatives --remove "java" "/usr/lib/jvm/java-8-oracle/jre/bin/java"
-
       - rm -r /usr/lib/jvm/java-8-oracle
 
       # Java 8 install
@@ -24,7 +23,6 @@ phases:
       - apt-get install -y maven
 
       - update-alternatives --config java
-
       - java -version
 
       # SSH key
